@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+   </head>
+
+<style>   
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 20px;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+.scl a {
+    color: transparent;
+    text-shadow: 0 0 25px #666666;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 36px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+</style>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a>organism.zero</a></li>
+        <li><a href="img.html">images 🌀</a></li>
+        <li><a href="wrt.html">writing 💬</a></li>
+        <li><a href="abt.html">about 👥</a></li>
+        <li class="scl"><a>social 🕸</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+
+<script>
+</script>
+
+</html>
