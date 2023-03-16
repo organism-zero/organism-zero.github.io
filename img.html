@@ -45,12 +45,32 @@ nav a {
   font-size: 32px;
   padding: 10px;
 }
+   
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.image {
+  width: 24.5%;
+  margin-top: 5px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
 
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .image {
+    width: 100%;
   }
 }
 
@@ -69,6 +89,34 @@ nav a {
       </ul>
     </nav>
   </header>
+   
+   <div class="image-grid">
+    <div class="image">
+      <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png">
+    </div>
+    <div class="image">
+      <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png">
+    </div>
+    <div class="image">
+      <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png">
+    </div>
+    <div class="image">
+      <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png">
+    </div>
+    <div class="image">
+      <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png">
+    </div>
+    <div class="image">
+      <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png">
+    </div>
+    <div class="image">
+      <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png">
+    </div>
+    <div class="image">
+      <img src="https://i.postimg.cc/4yjbWxz5/nexus39.png">
+    </div>
+  </div>
+   
 </body>
 
 <script>
