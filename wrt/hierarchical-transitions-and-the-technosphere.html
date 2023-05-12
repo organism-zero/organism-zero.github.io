@@ -1,814 +1,814 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400&display=swap" rel="stylesheet">
-  </head>
-  <style>   
-    ::selection {
-    background: #eedc82;
-    }
-    body {
-    font-family: 'Figtree', sans-serif;
-    }
-    header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    border: 1.5px solid black;
-    padding: 20px;
-    z-index: 100;
-    }
-    nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    }
-    nav li {
-    list-style: none;
-    }
-    .wrt a {
-    color: transparent;
-    text-shadow: 0 0 25px #666666;
-    }
-    nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 29px;
-    padding: 10px;
-    }
-    .text {
-    margin-top: 10px;
-    padding: 30px;
-    border: 1.5px solid black;
-    }
-    .title { 
-    font-size: 29px; 
-    border-bottom: 1.5px solid black;
-    padding-bottom: 3px;
-    margin-bottom: 38px;
-    }
-    .subtitle {
-    font-size: 29px; 
-    padding-bottom: 5px; 
-    border-bottom: 1.5px dotted black;
-    }
-    .p {
-    font-size: 23px;   
-    }
-    .text a {
-    text-decoration: underline;
-    text-decoration-color: red;
-    color: black;
-    }
-    .text a:hover {
-    text-decoration: none;
-    background-color: red;
-    }
-    .txtimg {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    .quote {
-    margin-left: 30px; 
-    font-size: 20px;"
-    }
-    
-    @media (max-width: 768px) {
-    html {
-    scroll-padding-top: 200px;
-    }
-    nav ul {
-    flex-direction: column;
-    }
-    nav a {
-    font-size: 25px;
-    }
-    .title {
-    font-size: 25px;  
-    }
-    .subtitle {
-    font-size: 25px;  
-    }
-    .p {
-    font-size: 17px;   
-    }
-    .txtimg {
-    width: 100%;
-    }
-    .quote {
-    margin-left: 30px; 
-    font-size: 15px;"
-    }
-    }
-  </style>
-  <body>
-   <a id="top"></a>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/index.html">organism.zero</a></li>
-          <li><a href="/img.html">images 🌀</a></li>
-          <li class="wrt"><a>writing 💬</a></li>
-          <li><a href="/abt.html">about 👥</a></li>
-          <li><a href="/scl.html">social 🕸</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="text">
-    <div class="title">
-      Hierarchical Transitions + the Rules of the Technosphere
-    </div>
-    <div class="p">
-      <img class="txtimg" src="sphereFolding.jpeg"></p>
-      <div class="p">
-        <p class="subtitle">Sections
-        <p style="margin-left: 30px">
-          ↘ <a href="#ts">Introducing the Technosphere</a>
-          <br>
-          ↘ <a href="#ht">Hierarchical Transitions</a>
-          <br>
-          ↘ <a href="#idah">Intrinsic Duplication + Ancestral Haemoglobin</a>
-          <br>
-          ↘ <a href="#ed">Extrinsic Duplication + Hierarchic Biological Complexity</a>
-          <br> 
-          ↘ <a href="#emcd">Endosymbiosis, Multicellularity, Complexity Drain</a>
-          <br>
-          ↘ <a href="#ct">Concluding Thoughts</a>
-        </p>
-        <p>
-          <br>
-          Last year I had the opportunity to attend an Environmental Humanities graduate seminar at the University of British Columbia with 
-          <a href="https://mcmaster.academia.edu/DerekWoods">Derek Woods</a>. While I was unable to register due to a full course load,
-          I dropped in on a single session where the topic of discussion was “Planetary Technics.” During the seminar I began contemplating some 
-          hazy connections between certain themes relating to a paper we read about large-scale technological systems (which I’ll introduce in the 
-          following section) and some ideas in theoretical biology regarding the collective dynamics of major hierarchic 
-          transitions. The following text attempts to flesh out these conceptual relationships in more detail. 
-        <p>
-          This piece is a work in progress. Initially, I only intended to engage with two resources, one text and one lecture, putting them in 
-          dialogue with one another to tease out their similarities and chart future research directions. Naturally, as I was writing I encountered
-          new references that complemented this project and new texts, ideas, and thinkers began to orbit around my efforts. While far from complete, 
-          I’ve done my best to integrate some of these new resources into the following piece. Unlike a polished text with a focused narrative,
-          my writing here is an attempt to feel my way through a set of ideas, documenting my thoughts as I piece them together. My hope is that 
-          I’ll continue to develop and refine this line of thinking long after this piece has been shared with you here, 
-          especially as it has become increasingly apparent that this topic is much richer than I’d first imagined.
-          <a id="ts"></a>
-        <p>
-          <br>
-        <p class="subtitle">Introducing the Technosphere
-        <p>
-          The readings for the seminar that week touched on a range of topics relating to technology, media, geology, ecology, 
-          capitalism, and the <a href="https://en.wikipedia.org/wiki/Noosphere">noosphere</a>. Among them was 
-          <a href="https://journals.sagepub.com/doi/10.1177/2053019614530575">Humans and Technology in the Anthropocene: Six Rules</a>, a fascinating 
-          paper on the quasi-autonomous dynamics of planetary-scale technological systems, authored by Emeritus Professor of Geology and Civil and 
-          Environmental Engineering, <a href="https://cee.duke.edu/faculty/peter-haff">Peter Haff</a>. 
-          In the text, Haff attempts to encapsulate said dynamics using the following six rules:
-        <p>
-        <p style="margin-left: 30px"> 
-          ① The rule of inaccessibility 
-          <br>
-          ② The rule of impotence 
-          <br>
-          ③ The rule of control 
-          <br> 
-          ④ The rule of reciprocity 
-          <br> 
-          ⑤ The rule of performance 
-          <br>
-          ⑥ The rule of provision 
-        </p>
-        <p>
-          Each of these rules is meant to express an important feature of large-scale, hierarchically-nested or stratified technological systems while also defining 
-          how humans are compelled to operate in relation to them. Those looking for a more comprehensive account of these rules are encouraged to consult the entire 
-          paper (linked above) as this piece will not discuss them in great detail. In a nutshell, however, they can be summarized by the following:
-        <p>
-        <p style="margin-left: 30px"> 
-          ① Inaccessibility: Differences in size or scale of two or more systems strongly limits precise interactions between their local variables.
-          <br>
-          ② Impotence: Larger scale systems constrain lower-tier components and are therefore generally unresponsive to most behavior of these nested subsystems.
-          <br>
-          ③ Control: No individual part may directly control or cause a system's behaviour but can act in such a way to more effectively enable the system to maintain viability.
-          <br> 
-          ④ Reciprocity: Symmetrical interactions between two or more systems are limited to those sharing the same stratum or scale. 
-          <br> 
-          ⑤ Performance: Some actions of most system parts are compelled to support the function of the system to which they belong. 
-          <br>
-          ⑥ Provision: Higher-stratum systems contribute to the maintenance of a suitable environment for their components so as to enable their support function behaviour. 
-        </p>
-        <p>  
-          Now, there are evidently many ways to interpret something as broad as a planetary-scale or large-scale technological system. Indeed, comparable 
-          forms of this general idea––i.e. a global sphere produced by and consisting of aspects of human reason, scientific knowledge, and technological development––have
-          been explored before through concepts like the <a href="https://en.wikipedia.org/wiki/Anthroposphere">Anthroposphere</a>, 
-          <a href="https://www.sociostudies.org/almanac/articles/conceptions_of_a_global_brain_an_historical_review/">Metaman, Conscious-Technology, The Global Brain</a>, 
-          and the <a href="https://en.wikipedia.org/wiki/Noosphere">Noosphere</a>. 
-          Haff’s specific formulation of this idea is what he calls the <i>technosphere</i>. I'll begin with some descriptions of this term to set the stage for the 
-          connections I’m interested in exploring between Haff's work and the idea of hierarchic transitions in biology.
-        <p>
-          In an academic context, the word “technosphere” can be traced back to a <a href="https://sci-hub.ru/10.1109/MSPEC.1968.5214690">
-          1968 text</a> by biomedical engineer and biological control-theory researcher J. H. Milsum, although Haff has made the term his 
-          own through a number of publications in the last decade or so (e.g. see <a href="www.pne.people.si.umich.edu/PDF/Haff 2013 Technology as a Geological Phenomenon.pdf">
-          1</a> and <a href="https://sci-hub.ru/10.1177/2053019616677743">2</a>), many of which being thematically allied with a growing literature on 
-          the Anthropocene. For Haff, the technosphere is said to be the technological analogue to the various natural geological paradigms or 
-          <a href="https://en.wikipedia.org/wiki/Outline_of_Earth_sciences#Earth's_spheres">planetary spheres</a> that constitute and sustain the Earth 
-          system, such as the geosphere, the hydrosphere, the atmosphere, or the biosphere. Haff notes, for instance, that all of the aforementioned 
-          systems are global in their extent, autonomous to some degree, and involve the widespread appropriation of resources. General commonalities
-          aside, a more specific albeit contracted description of the technosphere is as follows:
-        <p style="margin-left: 30px">
-          A global interconnected system of 
-        </p>
-        <p style="margin-left: 50px">
-          ◾ Technical artifacts 
-          <br>
-          ◾ Social structures
-          <br>        
-          ◾ Physical infrastructure 
-        </p>
-        <p style="margin-left: 30px">
-          which constitute
-        </p>
-        <p style="margin-left: 50px">
-          ◾ The totality of the built human environment
-          <br>
-          ◾ The particular energy and resource transformations underpinning the system’s “metabolic” profile
-          <br>        
-          ◾ The emergent principles that govern our relationship with it. 
-        </p>
-        <p>
-          Per this definition, the technosphere is not simply the aggregate of all technological objects––much like the biosphere is not the 
-          mere sum of all planetary biomass––but rather has dynamic emergent properties that result from the organization of its various components 
-          and the associations between them, including constraints, incentives, deterrents, and other relational processes associated with the system’s 
-          functioning. This central characterization of a complex system such as the technosphere or the biosphere is to be clearly understood and 
-          we’ll return to this point in a moment. 
-        <p>
-          We can get a richer, more extensive view of what is meant by the technosphere in Haff's own words in the following passage taken from a 2014 text 
-          titled <a href="https://pne.people.si.umich.edu/PDF/Haff 2013 Technology as a Geological Phenomenon.pdf">Technology as a Geological Phenomenon: 
-          Implications for Human Well-Being</a>:
-        <p class="quote">
-          “[The technosphere is]…the set of large-scale networked technologies that underlie and make possible rapid extraction from the Earth of large 
-          quantities of free energy and subsequent power generation, long distance, nearly instantaneous communication, rapid long-distance energy and 
-          mass transport, the existence and operation of modern governmental and other bureaucracies, high-intensity industrial and manufacturing 
-          operations including regional, continental and global distribution of food and other goods, and a myriad additional ‘artificial’ or 
-          ‘non-natural’ processes without which modern civilization and its present 7 × 109 human constituents could not exist. If the term 
-          ‘anthroposphere’ is meant to emphasize the role of human beings as causative agents responsible for Earth transformations that define the 
-          Anthropocene, the use of ‘technosphere’ suggests a more detached view of an emerging geological process that has entrained humans as 
-          essential components that support its dynamics.”  
-        </p>
-        <p>
-          Haff once more, from the more recent article which we read in the seminar: 
-        <p class="quote">
-          “The technosphere includes the world’s large-scale energy and resource extraction systems, power generation and transmission systems, communication,
-          transportation, financial and other networks, governments and bureaucracies, cities, factories, farms and myriad other ‘built’ systems, as well
-          as all the parts of these systems, including computers, windows, tractors, office memos and humans. It also includes systems which traditionally
-          we think of as social or human-dominated, such as religious institutions or NGOs. The Haber-Bosch process and associated technologies, 
-          responsible through synthetic fixation of nitrogen and distribution of resulting fertilizers for providing about 40% of the world’s dietary 
-          protein (Smil, 2002), is a specific example of a globally distributed component of the technosphere.”
-        </p>
-        <p>
-          These excerpts highlight the many energetic, informational, productional, and logistical processes enabled by our planetary technological system
-          as well as some concrete examples of the interrelated artifactual 
-          subsystems which the technosphere comprises, i.e. the various contemporary networked technologies nested within the global system. Both these 
-          aspects (built artifactual systems and the myriad dynamic processes they facilitate) are part and parcel of the descriptions above and draw our attention 
-          to the sheer scale of the technosphere and the scope of what component subsystems and processes constitute this technological system. From relatively 
-          simple products like office memos and fertilizer, to complex intergenerational
-          socio-cultural forms like religious institutions, cities, and governments, the magnitude of the technosphere is vast and totalizing, assimilating 
-          nearly all phenomena connected to the workings of contemporary human civilization, including the behaviour of human subjects themselves.
-        <p>
-          This leads us directly to one of the central aspects of Haff’s theory of large-scale technological networks: his insistence on a shift in our 
-          thinking away from the “natural assumption that the technosphere is primarily a human-created and controlled system” and towards “the idea that 
-          the workings of modern humanity are a product of a system that operates beyond our control and that imposes its own requirements on human 
-          behaviour.” Put more plainly: "...humans are components of a larger sphere they did not design, do not understand, do not control and from which 
-          they cannot escape.." Haff notes that similar positions have been articulated before in other scholarly contexts, particularly by political 
-          and social theorists, such as <a href="https://mitpress.mit.edu/9780262730495/autonomous-technology/">Langdon Winner</a> and 
-          <a href="https://ia803209.us.archive.org/2/items/JacquesEllulTheTechnologicalSociety/Jacques%20Ellul%20-%20The%20Technological%20Society.pdf">
-          Jacques Ellul</a>, who have written about the emergence of modern autonomous technological systems and 
-          "whose works go a long way toward disabusing the notion that humans operate as independent agents in the modern technological world."  
-        <p>  
-          One way of thinking about this relationship between human agents and the technosphere is to frame it in terms of how the properties of <i>organization</i>
-          and <i>constraint</i> operate in complex systems. Haff devotes a section to these ideas, which I will expand on in more detail once we get into the biology 
-          of hierarchic transitions. For now it will suffice to say that the general idea is that for a complex dynamic system to persist through time and space, 
-          that is, to maintain some systemic coherent unity at a relevant temporal and spatial scale,  
-          most of its component parts and processes must behave, and be organized in relation to one another, in a manner that is consistent with the system’s
-          ability to reproduce itself as a unity. In other words, <i>systemic consistency and robustness requires functional organization, implying constraints
-          on the degrees of freedom accessible to constituent components</i>. 
-        <p>
-          Once we're committed to conceiving of the technosphere as a higher-level unity defined by organizational relations between coupled subsystems, 
-          we can begin to see how the interests of human agents, as subordinate elements of the macro-system, must be constrained to some extent to 
-          align with the properties and/or emergent principles of the complex dynamic system within which they are embedded. Haff's 2014 text supplies us
-          with some examples of what these constraints could be, ranging from "hard" and tangible constraints like 
-          architectural and infrastructural barriers, to "soft" and more abstract or normative regulations, such as incentives and deterrents for 
-          behaviour that supports or interferes with the functioning of a given host system. Taken together, these features of the technosphere are
-          reflected in the first 4 rules: planetary scale, distributed systemic functionality (control) and organizational constraint (impotence) inhibits 
-          direct causal interactions between different strata (inaccessibility) of a large, complex, dynamic technological system, and such a system may only 
-          be affected by other systems which inhabit comparable scales and are capable therefore of mutually interaction (reciprocity).     
-        <p>   
-          Importantly, the intertwining of humans and the technosphere also means that we are increasingly reliant upon its functioning to support our 
-          well-being and continuation as a species. For instance, Haff puts forth the following estimation to really drive home the extent to which 
-          contemporary human populations are beholden to the organizational constraints, and affordances, of large-scale 
-          technological systems: "the pre-Anthropocene, pre-technological … human population was perhaps 10 million"
-          and "the ramp-up of technology from pre-history through, e.g., dynastic China, Rome and medieval Europe to today’s global technology has led to 
-          the expansion of this population to a level approaching 10 billion today … suggesting that on the order of 999 out of every 1000 humans owe their 
-          existence and their wellbeing to technological systems." 
-        <p>
-          Conceived of as an emerging geological process, Haff's emphasis on the quasi-autonomous property of the technosphere frames
-          how our networked technological systems interface with other Anthropocene-related phenomena in a manner which understates human autonomy over the 
-          production and transformation of the built environment. 
-          After all, the Anthropocene denotes a geological epoch where significant impacts on the planet's climate and ecosystems are 
-          the result of the activity of humankind, and therefore part of the uniqueness of Haff’s contribution to such discourse is to invert the 
-          directionality of this causal relation. As Haff writes: "The technosphere is a system for which humans are essential but, nonetheless, 
-          subordinate parts … This does not mean that humans cannot influence its behavior, but that the technosphere will tend to resist attempts to 
-          compromise its function." Haff again: "humans have become entrained within the matrix of technology and are now borne along by a supervening 
-          dynamics from which they cannot simultaneously escape and survive." 
-        <p> 
-          However as we'll see, the general framework of this perspective––that the emergent dynamics
-          of the technosphere restrict and recruit human action to mutually support continued functioning of the resultant macrosystem––will also be crucial to 
-          connecting this novel planetary-scale paradigm with certain evolutionary principles of biological complexity facilitated by hierarchical constraint,
-          possibly providing new insight into both. 
-        <p>
-          To summarize: the technosphere is a composite system and planetary paradigm comparable to other geological phenomena. Its components include 
-          everything from biological organisms to technological artifacts, social institutions, and emergent relational processes which both 
-          enable and are enabled by the global system. These organizational constraints play a significant role in ensuring the reciprocal survival and functioning 
-          of both the whole system and its natural and artificial components. Conceptualizing the nature of large-scale technological systems in the aforementioned 
-          manner might also illuminate equivalences 
-          between the dynamics of the emerging technosphere and certain hierarchically-nested biological systems.   
-        <p>
-          The remainder of this text will focus on drawing comparisons between these principles, some of Haff's rules, and the ideas of <a href="https://anthropology.berkeley.edu/terrence-w-deacon">
-          Terrence Deacon</a> and <a href="https://scholars.duke.edu/person/dmcshea">Daniel McShea</a> regarding evolutionary synergies, hierarchic
-          transitions in coupled systems, and the transformations in complexity and autonomy that accompany such processes. In order to make
-          these connections, and clarify some of the terms I’ve just introduced, I turn to some key points from 
-          <a href="https://www.youtube.com/embed/aWMEnIYEaQQ">a talk</a> that Deacon gave in 2017, as well as <a href="https://pubmed.ncbi.nlm.nih.gov/36075549/">
-          a paper</a> published in 2022, each pertaining to the subject of hierarchic transitions in biological evolution.
-          <a name="ht"></a>
-        <p>
-          <br>
-        <p class="subtitle">Hierarchical Transitions
-        <p>
-          A couple of years ago I came across a presentation on YouTube titled <a href="https://www.youtube.com/watch?v=aWMEnIYEaQQ">"Hierarchic Transitions 
-          in Evolution"</a>, delivered by neuroanthropoligist <a href="https://anthropology.berkeley.edu/terrence-w-deacon">Terrence Deacon</a> 
-          for a virtual seminar series associated with Binghampton University’s 
-          <a href="https://www.binghamton.edu/evos/">Evolutionary Studies Program</a>. I've also discovered more recently that the ideas Deacon covered in 
-          this talk have also been articulated in a 2022 article in the journal Biosystems titled <a href="https://pubmed.ncbi.nlm.nih.gov/36075549/">A 
-          Degenerative Process Underlying Hierarchic Transitions in Evolution</a>. In both these resources, Deacon speculates on how the hierarchic 
-          complexity of organismal structure, function, and form are generated through evolutionary processes. Generally speaking, hierarchic complexity is 
-          a term used here to describe a biological phenomenon whereby numerous autonomous living entities develop co-dependent or synergistic behaviours 
-          with the collective relations of an emergent system, sometimes comprised of two or more coupled systems, and often leading to the stabilization 
-          of new macro-scale biological units (such as pluricellular or multicellular organisms). Hierarchic complexity also denotes what some believe to 
-          be a resultant decrease in the functional autonomy of the novel system's constituent entities that occupy lower-tier strata relative to the emergent 
-          global whole. Owing in part to the lack of any widely accepted theory of how such transformations in hierarchic complexity occur, Deacon has 
-          developed his own framework for thinking about how these organizational and morphological features of living systems emerge at various scales, 
-          and how this process might be implicated in <a href="https://global.oup.com/academic/product/the-major-transitions-in-evolution-9780198502944">
-          evolutionary developments such as transitions in individuality</a>. Much like Haff's work on the technosphere, Deacon's theory of hierarchic 
-          complexity reflects a similar concern for principles of organization and constraint, distributed functionality, and gradations of 
-          autonomy across multiple scales of complex hierarchically-structured systems.  
-        <p>
-          Deacon's thoughts on this topic are contributions to an existing body of modern literature on the phenomenon of hierarchical transitions, or evolutionary 
-          transitions in individuality, that is nearly a century and a half old. As mentioned above, this is a process by which 
-          groups of discrete organisms collectively form higher-level aggregate entities or novel concrete biological individuals. In this context, 
-          a biological entity or individual refers to: <i>a temporally-enduring spatially-individuated being with properties or 
-          functions such as feeding, reproduction, and self-preservation that belong to the system at the highest-level</i>. A broad range of examples can be 
-          used to illustrate this idea, including the <a href="https://en.wikipedia.org/wiki/Symbiogenesis">origin of eukaryotic cells via prokaryotic symbiosis</a>,
-          <a href="https://en.wikipedia.org/wiki/Multicellular_organism#Origin_hypotheses">multicellular entities arising from unicellular organisms</a>, and 
-          <a href="https://en.wikipedia.org/wiki/Superorganism">colonies formed from pluricellular individuals</a>. An early treatment of this topic in the 
-          modern history of biology can be found in <a href="https://en.wikipedia.org/wiki/Herbert_Spencer">Herbert Spencer</a>'s 19th c. works 
-          <a href="https://www.gutenberg.org/ebooks/54612">Principles of Biology</a> and <a href="https://praxeology.net/HS-SP.htm#firstprinciples">First 
-          Principles</a>, which theorized, in the parlance of their time, about the nature of hierarchically-nested scales of biological organization. 
-          In 1942, a series of papers published together under the title <a href="https://sci-hub.se/10.1093/aesa/36.1.142">Biological Symposia, Vol VIII. 
-          Levels of Integration in Biological and Social Systems</a> sought to discuss the relationship between such varied subjects as colonial Protozoa, 
-          the origins of multicellularity, and comparisons of human and insect societies. Throughout the latter half of the 20th c., major contributions 
-          to the literature included texts and publications such as <a href="https://en.wikipedia.org/wiki/Howard_H._Pattee">H. H. Pattee</a>’s 
-          <a href="http://mechanism.ucsd.edu/teaching/f17/phil204A/readings/Pattee%201970%20The%20Problem%20of%20Biological%20Hierarchy.pdf">
-          The Problem of Biological Hierarchy</a> (1970), <a href="https://www.nbi.dk/~natphil/salthe/">Stanley N. Salthe</a>’s 
-          <a href="http://library.lol/main/5624738534618306F6FDB6688CA2EFC5">Evolving Hierarchical Systems</a> (1985), 
-          <a href="https://en.wikipedia.org/wiki/Leo_Buss">Leo Buss</a>’ <a href="https://archive.org/details/evolutionofindiv0000buss/page/n5/mode/2up">
-          The Evolution of Individuality</a> (1987), and <a href="https://en.wikipedia.org/wiki/John_Maynard_Smith">John Maynard Smith</a> and 
-          <a href="https://en.wikipedia.org/wiki/E%C3%B6rs_Szathm%C3%A1ry">Eörs Szathmáry</a>’s <a href="https://archive.org/details/majortransitions00mayn">
-          The Major Transitions in Evolution</a> (1995), as well as concepts like <a href="https://en.wikipedia.org/wiki/Valentin_Turchin">Valentin Turchin</a>’s
-          <a href="https://en.wikipedia.org/wiki/Metasystem_transition">‘Metasystem Transitions’</a> (1970), and the notions of 
-          <a href="https://www.informationphilosopher.com/solutions/scientists/polanyi/Polanyi_Life_Structures.pdf">‘Dual Control’ and ‘Hierarchical 
-          Boundary Conditions’</a> (1968) in the work of <a href="https://en.wikipedia.org/wiki/Michael_Polanyi">Michael Polanyi</a>. It should be noted as 
-          well that this text only engages with a minute sampling of available resources on this topic.    
-        <p>
-          In his lecture, Deacon first sets out to address what he sees as a contradiction in “replicator-selection stories” of evolution, i.e. explanations 
-          of evolutionary phenomena most commonly associated with <a href="https://en.wikipedia.org/wiki/The_Selfish_Gene">selfish gene theory</a>. Deacon 
-          posits that replicator-selection theories mistakenly overemphasize absolute autonomy and controlled replication as the primary and conserved features 
-          underpinning evolving biological systems, instantiated in what is thought to be the most fundamental causal unit of the organism: the genetic components 
-          of individual cells. Deacon reasons, however, that the existence of evolving hierarchically-complex living systems implies coordination and regulation 
-          across a multitude of intraorganismal and extra-cellular spatial and temporal scales, and that the autonomy of the constituents of such systems, and 
-          the degree of control they can exercise, must therefore be relinquished to some degree if synergies between these various interdependent levels are to 
-          develop at all. In his most recent paper, Deacon substantiates this point by drawing from a 2017 article titled <a href="https://www.sciencedirect.com/science/article/pii/S0022519316304349">
-          On the Developmental Self-Regulatory Dynamics and Evolution of Individuated Multicellular Organisms</a>, written by theoretical biologist Felipe Veloso, 
-          who Deacon believes “unambiguously demonstrates that the development of multicellular animals depends on a shift of control from intracellular 
-          genetic constraints to extra-cellular relational constraints that emerge at the organism level.”
-        <p>
-          To further develop this perspective, Deacon turns to the important work of evolutionary biologist Leo Buss, and the phenomena of multicellular 
-          individuality in plants, animals, and fungi, to provide examples of a class of systems which favour sophisticated cooperation and exhibit autonomy-limiting 
-          properties at various scales of their organization. For instance, Deacon describes how fungi enable cellular cooperation via cell membranes which are 
-          porous enough to favor widespread homogeneity in cell-type and tissues. The logic here is that having cell membranes with greater permeability makes it 
-          difficult to correlate the influence of a set of genes, or a genome, with controlled effects in the immediate surroundings of its local nucleus, 
-          rather than that of neighbouring cells. In other words, if the membrane cannot reliably regulate what enters and leaves the cell, gene products can have
-          effects both inside and outside the cell in an untargeted manner, nullifying any strong demarcation between one cell and any other. As a result, from any 
-          individual cell's "point of view", it is unfeasible to guarantee whether their genes will be the ones reproduced in the fruiting body. 
-          Cooperative reproductive behaviour among cells may then emerge as a compensatory mechanism for 
-          this constraint on the absolute reproductive autonomy of any given cell in the collective. In the case of plants, he points to the structural limitations 
-          of rigid cell walls and their role in restricting movement and fostering highly deterministic cell fates. This is a more coercive evolutionary strategy 
-          than that of fungal organisms, but nonetheless facilitates systemic cohesion while dampening cellular autonomy. Briefly put: multicellular synergistic 
-          cooperation among cellular components “is accomplished in fungi by preventing genetic determination of distinct tissue types, in plants by eliminating 
-          mobility of cells, and in animals by determination of cell lineage fates by maternal factors prior to cell-specific gene expression.” In all cases, 
-          multicellular eukaryotic systems are thought to have achieved stabilized individuation in part by preventing any given cell from fully 
-          and independently determining whether it can replicate or persist alone. Without this constraint, the integrity of the global system is likely 
-          to be compromised by selfish unfettered replication, such as that which occurs during cancerous cell growth. 
-        <p>
-          Here we return to the description I began to sketch in the previous section about organization and constraint in dynamic systems. Both Haff and Deacon––as well 
-          as many of those working on the question of hierarchic transitions more generally––are tapping into a very similar framework for thinking about related 
-          phenomena in biological and social reality. Much like the dynamics of multicellularity then, the technosphere and its dynamics can be viewed as a hierarchical 
-          system that exploits similar principles of constraint in its organizational constitution to ensure the reciprocal and synergistic functioning of an emergent global 
-          whole relative to its parts, irrespective of the material basis of the components. One principal difference, however, between Haff and Deacon is that the former 
-          focuses mostly on an analysis of how such systems <i>work</i>, while the latter is providing a theory for how such systems <i>got to be that way</i>.
-        <p>
-          Deacon's question, then, is ultimately an evolutionary, or perhaps historical, one: i.e. <i>how, then, might any form of synergistic cooperation underpinning 
-          hierarchically-organized biological systems, and the implicit constraints on autonomy that result from such organization, occur in the first
-          place?</i> Deacon attempts to address this with the following proposal: 
-        <p style="margin-left: 30px">
-          ◾ In biology, environmental changes, as well as certain intra-organismal dynamics, can alter the selection pressures maintaining a particular trait. 
-          When the efficacy of a source of selection is weakened or eliminated entirely this is termed <a href="https://sci-hub.ru/10.1016/j.tree.2009.03.010">
-          "relaxed selection"</a> and can lead to the reduction or loss of traits and/or functions. In some cases, however, it can instigate biological novelty.
-          <br>
-          ◾ Building on the latter of these two outcomes, Deacon speculates that if selection is relaxed on some functional trait of a system or 
-          entity (let's say system or entity 'A'), this opens a space of possibility, outside the scope of selection pressures, for random explorations
-          of unprecedented interactions between 'A' and other, often molecular, system or entity ('B').
-          <br> 
-          ◾ Should advantageous functionality emerge as a result of 'A' and 'B's interactivity, selection pressure can now shift to target the synergistic
-          composite of 'A', 'B' and their relationality, amplifying their mutual dependency.
-          <br> 
-          ◾ As this relationship develops, adaptively valuable functions once carried out independently by 'A' and/or 'B' may now become transformed, or distributed 
-          across the interactions of the emergent coupled system, becoming increasingly constituted and selected for at this higher level of organization involving how 'A' 
-          and 'B' interact synergistically. 
-          <br> 
-          ◾ Furthermore, as this coupling is strengthened through selection over evolutionary time, 'A' and/or 'B' will progressively assume the functional 
-          role of a component in the context of the larger novel macro-system. 
-        </p>
-        Importantly, Deacon submits that this new hierarchically-organized system with synergistic,
-        distributed functionality is only sustainable if its development ensures that the loss of autonomy occurring at the lower levels of the constituent 
-        parts is also beneficial for said components, and that this benefit is sufficient to sustain the integrant subsystems' ability to perform 
-        support functions and contribute to the persistence and maintenance of higher-level functionality and macro-systemic or global order. This point will 
-        be especially salient as we dive into Haff's rules ⑤ and ⑥ in later sections. In the meantime, my hope is that the reader has begun to see an image taking shape of 
-        the conceptual resemblances between Haff and Deacon's perspectives, each an analysis of emergent hierarchically-organized systems where control and 
-        functionality are distributed across the collective relations of components whose existence and autonomy has become subordinated to, and 
-        dependent on, global identity and constraint.       
-        <p>
-          To contrast with the slightly more abstract theorization in the previous paragraphs, the following sections turn to some specific examples 
-          of relaxed selection and hierarchical transitions which Deacon uses to clarify and support this theory. 
-          <a name="idah"></a>  
-        <p>
-          <br>
-        <p class="subtitle">Intrinsic Duplication + Ancestral Haemoglobin
-        <p>
-          To build his case, Deacon must establish an explanation of the scale-invariant continuity of this process of relaxed selection and hierarchic 
-          complexity, beginning at the molecular, or <i>intrinsic</i> scale, and moving towards the <i>extrinsic</i> scale of intercellular and 
-          extra-organismal dynamics. A representative case of one circumstance known to facilitate relaxed selection at the molecular scale is 
-          <a href="https://en.wikipedia.org/wiki/Gene_duplication">gene duplication</a> 
-          or polyploidy, wherein "genes or genomes replicate such that selection can act on one copy but is relaxed on the other." Gene duplication has been 
-          hypothesized to play an important role in the evolution of biological novelty through the generation of redundant loci which become free to explore 
-          non-deleterious transformations in phenotypic structure and/or functions––a “random walk” away from the original function––while a duplicate gene 
-          continues to perform essential ancestral tasks. Deacon speaks to this process in greater detail in his 2022 Biosystems article: 
-        <p class="quote">
-          "[non-deleterious point mutations in a gene duplicate] may result in a progressive loss of the specificity of protein function, with some functional 
-          associations being lost while other related interactions 
-          maintained. Whereas the initial evolution of protein function may involve structural compromises to accommodate its multiple associations to other 
-          molecules, multiple variant forms may provide a “have your cake and eat it too” option, with each variant form able to evolve greater specificity for 
-          one or another of these sub-functional capacities. In other words, the duplication, relaxation of selection, and random walk can provide a kind of 
-          exploration of the space of possible synergistic relationships that lie, in effect, in the “function space” just adjacent to an existing function. This 
-          is a recipe for increasing functional complexity."
-        </p>
-        <p>
-          In Deacon's view, the underlying principles shaping this process of intrinsic duplication, relaxed selection, and random walk, and the exploration
-          of possible synergistic relations in a novel function space that it engenders, can be generalized and expanded to encompass analogous processes
-          occurring extrinsic to biological entities as well. That is to say, while intrinsic duplication operates at genetic, 
-          molecular, and regulatory levels, Deacon conjectures that extrinsic duplication can also occur at organismal and social scales. 
-          This will be key to understanding the links between Deacon's theoretical considerations and hierarchical constraint in planetary technological systems. 
-          In his lecture, Deacon provides numerous examples of intrinsic duplication involving synergies among haemoglobin variants, the acetylcholine receptors 
-          that compose an ion channel, and regulatory genes shaping body-plan segmentation, to name a few. In his more recent paper he focuses solely on a subset 
-          of these, one of which I'll summarize quickly before proceeding to describe extrinsic duplication.
-        <p>
-          In the case of the globin gene family, Deacon discusses how selection may have become relaxed for duplicate descendants of an ancestral haemoglobin
-          gene, allowing mutations to accrue in less evolutionarily-conserved structural elements (as opposed to, say, genes associated with the shape of the 
-          oxygen-binding element). Over time, certain structural variations in ancestral haemoglobin populations afforded the possibility for a synergistic 
-          complementarity between variants to arise, such that two novel molecular structures (α and β haemoglobin) eventually found themselves capable 
-          of binding with one another, producing a tetramer capable of carrying not one but four iron atoms, enabling superior oxygen transportation 
-          throughout the vascular system. 
-        <p>  
-          In this prototypical example of a hierarchic transition via intrinsic duplication, "the alpha and beta hemoglobin duplicates each acquired independent 
-          changes in shape but minimal changes in oxygen binding capacity in their separate divergence from the original “ancestral” hemoglobin gene. Changes 
-          that increased the stability of tetrameric binding appear to have been favored by natural selection with respect to one another, probably because of 
-          the superior oxygen transport capacity of the tetrahedral form." In other words, as relaxed selection facilitated sampling for combinations of the 
-          two systems (interactive structural coupling of alpha and beta haemoglobin), this in turn could enable selection to target and stabilize a 
-          synergistic, higher-level function (amplified oxygen transportation), distributed globally across a new coupled system (haemoglobin tetramer). 
-          <a name="ed"></a>  
-        <p>
-          <br>
-        <p class="subtitle">Extrinsic Duplication + Hierarchic Biological Complexity
-        <p>
-          Deacon’s notion of hierarchic complexity via extrinsic duplication finally brings us outside the intracellular realm of molecular variation and 
-          structural coupling into a domain of complex coupled interactions between organisms and/or environmental changes, while bridging both. In both resources 
-          referenced in this text, Deacon provides a number of examples to flesh out his notion of extrinsic duplication, including 
-          <a href="https://en.wikipedia.org/wiki/Symbiogenesis">endosymbiosis</a>, 
-          <a href="https://www.nytimes.com/2013/12/10/science/vitamins-old-old-edge.html">exogenous Vitamin C intake and a loss of function of the GULO gene</a>, 
-          the emergence of <a href="https://en.wikipedia.org/wiki/Eusociality">eusocial collectives</a> and the diminished 
-          autonomy of component organisms, and the development of language in humans and song structure in finches. Unlike intrinsic duplication, which often 
-          involves genetic, structural, or segmental duplications internal to the biological system, many of these cases involve interactions between an organism 
-          and an external and duplicate source of an intrinsic function. Quoting Deacon at length in his discussion of the transition from the endogenous metabolic 
-          synthesis of ascorbic acid to exogenous dietary dependency in anthropoid primates: 
-        <p class="quote">
-          "...reduced selection on the intrinsic function that is thereby provided with redundant support from 
-          outside will allow the intrinsic capacity to degrade..." and "...selection can be redistributed fractionally across highly diverse, and previously independent, 
-          genetic loci and epigenetic mechanisms ... extrinsic ascorbic acid dependency provides us with an opportunity to look at some of the secondary consequences of 
-          this degradation. The reduction of purifying selection maintaining this enzyme in turn would have unmasked selection on a variety of other traits that help 
-          guarantee the availability of this now essential nutrient. Thus, the behavioral flexibility that initially allowed primates to regularly forage on fruit 
-          eventually “addicted” anthropoid primates to a dietary niche in which fruit acquisition and digestion were critical. Degradation of this gene and its function 
-          would have unmasked selection on many diverse traits that coincidentally supported this “addiction.” These likely included the capacity to judge the ripeness 
-          of fruit (e.g., by the evolution of three-color vision), forage on the outer limbs of trees (e.g. by arboreal locomotor adaptations), find the sugar-rich and 
-          slightly acidic content of fruit attractive (e.g. taste receptor changes), and metabolize the sugars and tolerate the ethanol that over-ripe fruits contain 
-          (e.g. by changes in liver enzymes). All of these could be considered part of an adaptive suite for guaranteeing the supply of ascorbic acid."
-        </p>
-        In other words, if relaxed selection takes place for ancestral, primarily genetic loci whose associated function has now been 
-        externally replicated by a suite of inter-organismal or environmental relations, the mechanisms underpinning this function can diversify and become distributed 
-        across a broader synergistic aggregate of genetic, epigenetic, behavioural, and/or environmental systems and relations. Furthermore, this adaptive suite of coupled
-        subsystems supplies a target for selection to act upon, facilitating stabilizing effects at the higher level of the whole novel emergent system. 
-        <p>
-          The figure below depicts a oversimplified schematic of this phenomenon, whereby a gene or set of genes (Gene(s) 4) that once corresponded 
-          directly to a phenotype (Function 4) will degrade as a result of relaxed selection owing to the presence of an external, duplicate function (Environmental Duplication). 
-          Selective pressures are now distributed across any and all loci (Function 1, Function 5, Function 1B, Function 5B) with operational roles sustaining the exogenous source 
-          for the target function. 
-          <br>
-          <img class="txtimg" src="edDiagram.jpeg">
-          Once again, we end up with the emergence and stabilization of a new synergistically-constituted systemic order whose viability is maintained through organizational 
-          constraints on the autonomy or functional independence of the elements that comprise this new adaptive suite of relations. Notably, these elements are not confined
-          to the interior of a biological system, like a cell, but involve coupling of intra-organismal and environmental or exo-organismal variables. These assorted 
-          elements––from molecular to organismal behaviour, exogenous effects, and relations with an environment or between living systems––have now been effectively recruited 
-          as component parts providing support functions for a higher-level hierarchical system. From the perspective of the macrosystem enabled by this transition in hierarchic 
-          complexity, these elements are, in some sense, what Haff might call “essential but, nonetheless, subordinate parts.”    
-        <p>  
-          The general application of this principle to major hierarchic transitions in biological evolution, or as Deacon puts it, the identification of a "generic 
-          sequence of phases in the evolutionary process..." which describe "a trajectory that is common to ... major biological transitions", brings us 
-          to two much-discussed phenomena in the literature of theoretical biology: endosymbiosis and multicellularity. Indeed, these examples sharply highlight 
-          the constraints on autonomy experienced by subordinate parts as a result of their integration into an emergent system through the process of hierarchical transition, and 
-          gives a clearer sense of the implications this understanding has for interpreting the ongoing development of the technosphere.
-          <a name="emcd"></a>  
-        <p>
-          <br>
-        <p class="subtitle">Endosymbiosis, Multicellularity, Complexity Drain
-        <p>
-          Obligate endosymbionts, particularly mitochondria, are ideal systems for thinking through the similarities between Haff’s rules and Deacon’s hierarchic complexity. There is
-          an extensive literature on the evolution of mitochondria, the organelles that synthesize ATP (the so-called ‘energy currency of the cell’) which powers a myriad 
-          of biochemical and physiological processes in nearly all eurakyrotic organisms. However, for our purposes, I will provide only a truncated description of what is known as mitochondrial 
-          <a href="https://en.wikipedia.org/wiki/Symbiogenesis">symbiogenesis</a> or the <i>endosymbiotic theory of origin</i>. According to this theory––popularized and substantiated by 
-          evolutionary biologist <a href="https://en.wikipedia.org/wiki/Lynn_Margulis">Lynn Margulis</a> following a resurgence in the idea of symbiogenesis in the 1960s––organelles in 
-          eukaryotic cells, such as mitochondria and chloroplasts, are thought to have once been free-living microbes which developed obligate endosymbiotic relationships 
-          with some proto-eukaryotic host-cells. In other words, one set of once-independent organisms were engulfed by another, and each came to depend on the other for their survival. 
-          As the energy-producing properties of these microbes became increasingly valuable to the functioning of the host cell they were progressively assimilated into the 
-          whole proto-eukaryotic cellular system. Over evolutionary time, these micro-organisms are thought to have transitioned from autonomous living entities to endosymbionts, and finally organelles.
-          Some proposed reasons for this evolutionary development include: 
-        <p style="margin-left: 30px"> 
-          ◾ The advantage conferred by possessing multiple energy producing units within a single cell
-          <br>
-          ◾ Genomic degradation of both ancestral subsystems of the nascent eukaryotic cell 
-          <br>
-          ◾ A considerable loss of autonomy at the level of the former prokaryote 
-          <br>
-          ◾ The increasingly coupled, distributed functioning of the new unified macro-system. 
-        <p>
-          Deacon highlights some of these features in his presentation and paper, noting <a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2014.0330">estimates</a> "that mitochondria have 
-          lost as much as 99% of the functional genes typically present in their bacterial ancestors" with many of these genes being transposed to the nuclear genome as a result of the transition. 
-          Many proteins critical to organelle functioning are now produced by nuclear genes, while some nuclear genes have degraded as a result of organelles performing certain metabolic 
-          functions for the cell. Deacon is certainly not the only person to articulate to this. In fact, it is <a href="https://www.nature.com/articles/nrg1271">relatively well understood</a> 
-          that the mitochondrial genome is dramatically smaller than their bacterial relatives and that many organelle processes are known to be driven by nuclear-encoded gene products.
-        <p>
-          We can summarize and restate this phenomenon using Deacon’s particular theoretical framework in the following way: during some extended period in the evolution of the eukaryotic cell, the 
-          function of energy production for some ancestral cells underwent extrinsic duplication with the presence of, and interaction with, prokaryotic microbes. This permitted selection for 
-          certain functional genetic loci in both systems to become relaxed. As a result, explorations of unprecedented modes of interaction could take place, leading to the emergence of higher-level 
-          functional synergies and accompanying genomic degradation in both systems. Selection then came to target a system with distributed, relational functionality, now comprised of coupled 
-          subunits performing partial functional roles in sustaining a higher-level synergistic composite of what were once independent units. This process became so intensified that the effects of 
-          selection eventually stabilized the novel macro-system, generating a much more rigorously consolidated whole whose components now lacked the degree of autonomy they possesed prior to this 
-          transformation: a eukaryotic cell with mitochondrial organelles. In his 2022 paper, Deacon offers the following summary, comparing endosymbiosis in the evolution of the eukaryotic cell with 
-          exogenous Vitamin C intake and the degradation of intrinsic biosynthesis in primates: 
-        <p class="quote">
-          "Both examples ... involve the degradation and reorganizational effects that characterize extrinsic duplication of function. In the case of mitochondria ... redundancy 
-          of molecular functions previously provided by the host genome, and vice versa, begins as an extrinsic duplication of functions regulated by each previously autonomous genome ... almost 
-          certainly the distinctive metabolic contributions of oxidative metabolism with its orders of magnitude increase in energy generation and of photosynthesis with the autonomy it provides were 
-          critical to the early stages of these mutual degradation processes."
-        </p>
-        This story of mitochondrial origins also resonates with dynamics familiar to Haff's rules ⑤ and ⑥, or Performance and Provision. Recall that each rule 
-        described, respectively, how some actions of parts must support the functioning of the system to which they belong, and that systems enable such support 
-        function behaviour by contributing to the maintenance of a suitable environment for said parts. These two rules give us additional points of reference 
-        for reasoning about the following: for selection to effectively shift from an individual unit to the level of functional synergies between coupled 
-        systems––as it is hypothesized to have occured in the hierarchic transition of the eukaryotic cell––we would expect the behaviour of both organisms 
-        to have complemented each other in supporting the higher-level functionality of a now-ubiquitous extant evolutionary unit capable of elevated energy 
-        production, despite the subordination of certain features of each system to the requirements of the novel global whole. We observe the former, for instance, 
-        in the organelle's role in generating metabolic energy for the eukaryotic cell (a function which is also at the foundation of sustaining complex higher 
-        animal forms). While the latter can be seen in the constraints on the mitochondria's ability to grow and/or reproduce relative to the 
-        <a href="https://www.nature.com/scitable/topicpage/mitochondria-14053590/">specific energy requirements of specialized eukaryotic cells</a>. Finally, 
-        maintenance and persistence of the eukaryotic cell is also ensured through the provision of resources and/or environments that enable the performance 
-        of support functions by its components, as evidenced by the nuclear genome gradually coming to supply resources critical to organelle reproduction and maintenance.
-        <p> 
-          Connections between the rules of the technosphere and the dynamics of multicellularity are also apparent. Consider, for instance, an organism’s immune 
-          system and rules ① (Inaccessibility) and ④ (Reciprocity): Unlike the immune cells' ability to recognize and work to neutralize harmful substances 
-          and microbial pathogens, it is nearly impossible for the higher-level individual to engage in direct and precise interactions with local variables at this 
-          scale. The aggregate agent at the highest level (i.e. the multicellular organism) must rely on the activity of lower-tier parts to engage with other systems 
-          and events that share the same stratum in order to enable defense against infection (as well as contribute to the more existential process of distinguishing 
-          the boundaries of an organism's selfhood). Recall rules ② (Impotence) and ③ (Control) as well: multicellularity provides numerous examples of organizational 
-          constraints of autonomous cell behaviour in order to facilitate the collective integrity of the emergent individual, including, but not limited to, 
-          <a href="https://en.wikipedia.org/wiki/Apoptosis">apoptosis</a>, the activities of tumour suppressor genes, the canalization of stem cells into 
-          specialized and differentiated cells and tissues, <a href="https://royalsocietypublishing.org/doi/10.1098/rsif.2016.0555">
-          bioelectric networks and top-down morphogenetiic control</a>, and <a href="https://en.wikipedia.org/wiki/Homeostasis">homeostatic regulation</a> of 
-          body temperature, blood pressure, and more. That is to say, no individual part, nor subset of individual parts, is causally responsible for a system’s 
-          behaviour and each are instead constrained by emergent dynamics that enable the maintainence of higher-stratum systemic viability, channeling the behaviour 
-          of said components in such a way to more effectively enable the system's adaptation and persistence. 
-        <p>
-          Naturally, Deacon attempts to account for the evolution of multicellularity as a hierarhichal transition following the familiar logic of functional 
-          duplication, degradation, and synergistic interaction, dedicating a whole section of his <a href="https://www.sciencedirect.com/science/article/pii/S0303264722001514?via=ihub#bib40">
-          Biosystems article</a> to squaring this phenomenon with his framework. To do this, he draws heavily on the recent work of 
-          theoretical biologist and bioengineer <a href="https://ronininstitute.org/research-scholars/felipe-veloso/">Felipe Veloso</a>, whose research
-          demonstrates the importance of a shift in control from intracellular genetic interactions to extracellular relational constraints and regulation
-          of gene expression in the development of individuated multicellular organisms.
-        <p>
-          Here is Deacon once more, describing some principle features of the hierarchic transition to multicellularity: 
-        <p class="quote">
-          "Analogous to the different hierarchic transitions described in previous sections ... functional redundancy can lead to 
-          higher-order synergies and complexity via lower-level degeneracy. Offloading aspects of gene regulation onto the extracellular environment (which 
-          constitutes the higher-order organism) frees up intracellular mechanisms so that they might be recruited for new complementary functions and thus 
-          more complex and diverse cell phenotypes ... To the extent that this extracellular redundancy enables subsequent degeneration of intracellular 
-          genetically based regulation, previously autonomous cells would become increasingly dependent on their multicellular environment, while at the 
-          same time increasing the probability that different cell lineages will develop complementary functions."
-        </p>
-        This logic also extends to the cell-to-cell interactions that guide morphogenetic patterning, cellular differentiation, and the global geometry of 
-        the multicellular organism. Such activity goes beyond genetic regulation to include physical contact and molecular diffusion, as well as 
-        signalling across considerable intercellular distances in the case of the nervous system and its coupling with extrinsic sensory experience. As expected, 
-        "this suggests that the subordination of cell functions to the requirements of their collective synergy emerged as lower-level functional autonomy 
-        degraded in the context of redundant higher-order influences. In this way the evolution of the complex forms exhibited by multicellular bodies—including 
-        animal brains—also appears to be a consequence of an analogous duplication-degradation process that ultimately shifts phenotypic control to the 
-        higher-order synergy that constitutes the multicellular organism."
-        <p> 
-          In closing this section I wish to emphasize the notion of autonomy degradation that plays a key role in both Deacon and Haff's theories. For Haff, this 
-          relationship is implied by the way in which his set of basic dynamical rules describe certain conditions of human subordination to the 
-          requirements of scale and organization, reinforcing "the idea of humans as parts of, rather than simply creators and users of, modern technology."
-          Our species' relationship to, and interactions with the technosphere suggests that humans are "parts of a dynamic and uncontrollable Earth 
-          system from which they cannot escape and in whose service they labor." For Deacon, this type of relationship is an inevitable consequence of a generic 
-          process of hierarchic transitions in evolution, that is to say, a phenomenon thought to have occured multiple times, at multiple scales, in multiple 
-          biological substrates, throughout the history of life on earth. Whenever a process emerges that features collective synergy among individual units and 
-          the extrinsic displacement of their functionality onto the organizational relations between coupled systems, one should expect to see an accompanying 
-          degradation of the autonomy of lower-level units as they transition to the status of components of a novel emergent whole. 
-        <p>
-          A similar account is also offered by biologist and philosopher <a href="https://liberalstudies.duke.edu/people/faculty/daniel-w-mcshea">Daniel W. McShea</a> 
-          under the designation of <a href= "https://sites.duke.edu/mcshearesearch/files/2014/03/Complexity-drain-McShea.pdf">"complexity drain."</a> McShea's work 
-          in this area focuses on the hypothesis that as hierarchical transitions occur the component organisms will tend to lose functional capabilities and internal
-          parts. In other words, whether transitions take place as a result of collective associations among individual cells (such as those amongst free-living
-          prokaryotic cells in the development of the eukaryotic cell, or eukaryotic cells in the origins of multicellularity) or multicellular entities 
-          (such as insects forming individuated colonies), there is an expectation for component organisms to lose complexity in function and part counts. While McShea's
-          work to date tests this occurance solely at the cellular level, comparing the number of part types in protists and the cells of metazoans and land plants, his 
-          findings are consistent with the complexity drain hypothesis and point to further extensions of the study in the form of more nuanced quantitative analyses and 
-          testing at the level of colonial organisms or eusocial colonies.   
-        <p>
-          In a 2017 paper titled <a href="https://link.springer.com/referenceworkentry/10.1007/978-3-319-33038-9_123-1">Evolution of Complexity</a>, McShea provides 
-          an abbreviate overview of this area of research and some different examples: 
-        <p class="quote">
-          "...there is some data to suggest that there is a connection in fact, more specifically, that as a new higher level emerges, parts are lost at the next level 
-          down, what has been called a complexity drain (McShea 2002; O’Malley et al. 2016). In the emergence of the eukaryotic cell, the eubacteria that evolved into 
-          mitochondria became simpler, losing molecular components. More generally, it is thought that in multispecies bacterial associations, one level up from 
-          solitary bacteria, certain species may tend to lose the molecular machinery associated with certain metabolic functions as other species in the association 
-          take over those functions (also known as the “black queen” effect). Also, in multicellular organisms, the cells have fewer part types on average than 
-          free-living protists (McShea 2002). To see this, consider an extreme case, human blood cells, which have essentially no parts at all, compared to free-living 
-          protists, which have many. Finally, there is some reason to think that the same pattern of loss occurred in the origin of intensely social/colonial organisms: 
-          as the individuals in clonal associations differentiated into multiple types (castes in insects, polymorphs in marine invertebrates), they lose parts, becoming 
-          simpler as they specialized."
-        </p>
-        This loss of part types and functional capability is essentially analogous to a loss of autonomy, as this drain on complexity is associated with a reduction in 
-        the phenotypic/behavioural repetoire of component organisms, limiting their ability to operate as discrete and more functionally independent units. McShea 
-        further reiterates this view a number of times in his 2002 paper <a href="https://sites.duke.edu/mcshearesearch/files/2014/03/Complexity-drain-McShea.pdf">A Complexity 
-        Drain On Cells In The Evolution Of Multicellularity</a>, in relation to not only a weakening of autonomy at the cellular level in multicellular organisms, but 
-        also in "...the emergence of coloniality as a weakening of the individuality of the lower-level units (e.g., zooids, castes)" compared with those of related 
-        free-living species, and the simplification of behavioral repertories of individual insects in highly individuated colonies. 
-        <p> 
-          Deacon also briefly remarks on eusociality, referencing his <a href-"https://www.sciencedirect.com/science/article/pii/S0303264722001514">"social addiction"</a> 
-          hypothesis which seeks to explain pro-social organismal behaviour, such as altruism and cooperation, in terms of the "prior degeneration of autonomous capacities" 
-          (e.g. foraging, defending against predation) "due to prolonged relaxed selection in a context where these are available in excess." For Deacon and his co-author 
-          <a href="https://berkeley.academia.edu/JulieHui">Julie Hui</a>, if prolonged relaxation and degeneration "reaches a point of irreversible loss, maintenance of 
-          co-dependence becomes necessary" and "social cooperation is no longer optional" as "any threat to social cohesion becomes a threat to everyone’s survival." 
-          Echoes of these ideas resonate through Haff's perspective on the technosphere as well, however, in this case, co-dependence is not limited to cooperation
-          among human actors and the emergent social relations that structure their cohesion. Our contemporary planetary technological system is now deeply implicated in 
-          governing our cooperation with "incentives such as abundant food, medicines, instant communication channels and other desiderata that bind, or even addict, 
-          humans to the system that produces them, as well as by less subtle mechanisms expressed via legal, judicial, political, military and other elements of the 
-          technological armory." Cohesion is therefore distributed across a techno-social system with sentient components operating at a global scale, and as this 
-          dynamical system becomes increasingly individuated, threats to its viability (i.e. behaviour that is too autonomous, and therefore unaligned with the 
-          co-dependency required to serve the interests and ensure the stability of the technosphere) become threats to our own survival.
-        <a id="ct"></a>
-        <p>
-          <br>
-        <p class="subtitle">Concluding Thoughts
-        <p>
-          I'd like to end with a few thoughts about future directions for research, as well as some critical reflections on what I've written so far. Having initially 
-          engaged solely with his earlier presentation on hierarchic transitions, I was surprised that Deacon did not turn his attention to the subject of technology 
-          in any great detail. It's not exactly an arcane or marginal perspective to see technology as a universal anthropological phenomenon which exteriorizes 
-          physiological and cognitive phenotypes and is deeply correlated with human social and cultural activity. To be fair, however, in his more recent text, Deacon 
-          does gesture towards an analysis of stone-age technology and its contribution to relaxed selection for masticatory adaptations, foraging behaviour, and sexual
-          selection in prehistorical hominins. To my mind, another potentially interesting example is the co-evolutionary synergies between certain physiological,
-          behavioural, and cognitive adaptations and our use of fire to outsource digestion and provide new sources of warmth, lighting, and protection from predation. 
-          That is to say, following its discovery as a naturally occurring material and energetic process, as members of the genus Homo made practical use of fire, it 
-          may have induced a number of anatomical and cognitive transformations, including the size, shape, and function of the brain, teeth, and digestive tract (e.g. see 
-          <a href="https://onlinelibrary.wiley.com/doi/10.1002/evan.20275">1</a>, <a href="https://www.journals.uchicago.edu/doi/10.1086/204350">2</a>, 
-          <a href="https://www.science.org/doi/10.1126/science.316.5831.1558">3</a>). Moreover, there is <a href="https://www.pnas.org/doi/full/10.1073/pnas.2101108118">
-          some evidence</a> to suggest this technological innovation may have also been strongly associated with the developemnt of novel cultural mechanisms related 
-          to its transmission and persistence as a widespread feature of human life. Perhaps there's a story to be told about the "long evolutionary history 
-          of an obligate dependence on fire", its relationship to the logic of duplication, relaxation, degradation, and synergistic interaction, and even its place in 
-          the broad historical development of <a href="https://sci-hub.ru/10.1038/s41559-017-0138">planetary energy expansions</a> and the arrival of the modern 
-          technosphere. Examples such as this one could also add to a more nuanced image of how complexity drain or degradation manifests at certain scales (such as
-          the organ level) while enabling evolutionary novelty at a higher strata (e.g. at cognitive and techno-socio-cultural levels).  
-        <p>
-          Another possible thread to explore would be evaluating different perspectives on how to explain phenomena like hierarchical transitions and its relationship
-          to individuation and autonomy in complex dynamical systems. As I noted earlier in this text, there is a diverse literature on these and related topics and a 
-          more pluralist account could help us establish more clearly the explanatory limits of any individual thinker or set of ideas, theories, or models. 
-          This <a href="https://global.oup.com/academic/product/perspectival-realism-9780197555620?cc=us&lang=en&">multi-perspectival</a> approach might also enable a  
-          more comprehensive understanding of the subject at hand by incorporating heterogeneous perspectives at multiple levels of analysis. For instance, theories related
-          to the concepts of <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sres.3850050107">organizational closure in social</a> and 
-          <a href="https://link.springer.com/chapter/10.1007/978-94-017-9837-2_1">biological systems</a>, 
-          <a href="https://reflexus.org/wp-content/uploads/Autopoiesis-structural-coupling-and-cognition.pdf">strutural coupling</a>, 
-          <a href="https://www.dialecticalsystems.eu/contributions/why-western-science-and-philosophy-cannot-deal-with-the-relations-between-parts-and-wholes/">organizational 
-          constraint, and identity</a>, particularly in the work of <a href="https://en.wikipedia.org/wiki/Humberto_Maturana">Humberto Maturana</a>, 
-          <a href="https://en.wikipedia.org/wiki/Francisco_Varela">Francisco Varela</a>, <a href="https://scholar.google.com/citations?user=tlUCk58AAAAJ&hl=en">Matteo Mossio</a>, 
-          <a href="https://www.ias-research.net/people/alvaro_moreno/">Alvaro Moreno</a>, <a href="https://en.wikipedia.org/wiki/Niklas_Luhmann">Niklas Luhmann</a>, 
-          and <a href="https://mitpress.mit.edu/author/alicia-juarrero-3467/">Alicia Juarrero</a>, could go a long way in furnishing this text with alternative yet 
-          kindred frameworks for thinking through the ideas presented here. 
-        <p>
-          Take the 2015 book <a href="https://link.springer.com/book/10.1007/978-94-017-9837-2">Biological Autonomy: A Philosophical and Theoretical Enquiry</a> by Moreno
-          and Mossio, where the authors address, among other things, the question of biological organization and identity relative to levels of autonomy in pluricellular 
-          systems. In their account, organisms can establish “strong interactions with each other, giving rise to several different types of stable associations” with 
-          “different degrees of cohesion” which “tend to occupy new niches and to increase the chances of survival of both the constituting units and the associations 
-          themselves as a whole.” They also ask whether the constituting biological units of these integrated pluricellular systems are “still autonomous entities or 
-          just non-autonomous parts of an encompassing autonomous system.” This theoretical framework employs more generalizable concepts (such as 
-          structural-coupling and organizational or regulatory constraint) and more fine-grained classifications (such as varying degrees of cohesive associations and 
-          different types of stable associations along a continuum of <a href="https://pubmed.ncbi.nlm.nih.gov/21162371/">organizational closure</a>) that may afford 
-          more flexible and encompassing applications to the topic at hand, rather than seeking correlations between the functionality and degradation of a genome, 
-          as it often seems to be the case in Deacon's work, and the dynamics of massively complicated systems involving social, behavioural, biological, and technological dimensions. 
-          Granted, the productivity of Moreno and Mossio's formulations would hinge on their adaptation and extension to questions 
-          regarding hybrid networks of artefacts and organisms. A valid criticism in this respect would regard the limitations of treating the coupling of biological 
-          and technological systems, and the coupling of biological systems alone, as equivalent phenomena. Perhaps their resemblance does not justify their conflation and 
-          each may require much more precise and differentiated theorization in order to truly illuminate the dynamics shaping these related yet distinct processes. Then 
-          again, a more pluralist and comprehensive approach could also help to reconcile these approaches fruitfully. 
-        <p> 
-          Continuing on this note, it is worth asking: if the coupling of hybrid techno-bio-social systems is shaped by similar principles to those operating in biological
-          systems, where might we locate the technosphere along a spectrum of systems exhibiting varying degrees of stable associations and cohesion? How similar really are the 
-          organizational dynamics of the technosphere to those of a multicellular organism or a eukaryotic cell? It would seem extremely premature to see a strict identity 
-          between these biological phenomena and this current stage of planetary technological civilization. Though, as per the underlying thrust of this text, it may be 
-          worth thinking of the latter as analogous to the very earliest phases of obligate symbiosis. That is to say, the sentient componenets of the technosphere 
-          may not be coupled with their host system to the same extent as a mitochondrion organelle is with the eukaryotic host cell. Yet, as I have attempted 
-          to sketch in this text, we are nontheless on a trajectory of co-dependence or obligate coupling constituted by organizational constraint, a marked loss of autonomy, 
-          and relatively strong interactions and stable associations with the technosphere. To my mind, it is therefore very plausible that we have already ventured a few 
-          steps through the generic sequence of phases that we would expect to occur in the evolutionary process of a hierarchic transition with the technosphere.  
-        <p>
-          Some questions aimed at better understanding this trajectory could touch on whether certain thresholds exists across different types of systems, 
-          with similar underlying dynamics, that would mark a kind of tipping point into irreversible synergistic and co-dependent coupling. If so, how might we locate, or 
-          approximate, where such thresholds might lie and what their effects are predicted to be? This manner of inquiry might also benefit from integrating perspectives 
-          related to ideas such as <a href="https://en.wikipedia.org/wiki/Path_dependence">path-dependence</a> or <a href="https://www.isecoeco.org/pdf/techlkin.pdf">lock-ins</a>, 
-          and the various methods for conceptualizing, modelling, and studying these kinds of occurances. Although these concepts are not precisely synonymous, they both 
-          more-or-less describe how particular technologies become increasingly and systemically integrated into a social and/or broader environmental context in such a way 
-          that the space of alternatives becomes reduced in a progressively inflexible and possibly irreversible manner. This process is notably historical, whereby small 
-          events, sometimes driven by chance, can be magnified by positive feedback within a socio-technical, economic, and cultural system (including, but not limited to 
-          phenomena such as: increasing returns, network effects, interrelatedness of components, and high switching costs). This feedback can propel the system towards a 
-          state where all options within the range of its possible trajectories are no longer equiprobable. These ideas, and other related concepts within the history of 
-          science and technology literature, as well as that of science and policy studies and the history of technological change, are worth unpacking in detail in relation
-          to Haff's thoughts on the quasi-autonomous regulatory feedback loops of the technosphere and their role in sustaining its integrity as a systemic unit with 
-          stability against disruption.  
-        <p> 
-          Finally, and relatedly, if there are indeed basic principles related to organizational constraint, hierarchic transitions, and degradation of autonomy, as described 
-          by Haff, Deacon, McShea, and others, that are consistent across a multitude of complex systems, including techno-bio-social hybrids, it seems relevant to contemplate 
-          the implications for both political and ethical theories regarding human action in a world of diminished control over emerging planetary systems of historically 
-          unprecedented size and impact. Haff ventures very briefly into this area, touching on topics like the consequences of ecological degradation, global warming, 
-          world population, high-metabolism technology, waste product recycling, and external environmental and thermodynamic challenges to the stability of the technosphere’s 
-          growth conditions. Although Haff does not attempt to offer much in the way of solutions to these problems, he does emphasize the significance of recycling 
-          metabolic waste generated by the technosphere, writing that "unlike earlier Earth paradigms, which recycle most of their waste products, the technosphere does little 
-          recycling. The future of the technosphere as a paradigm rather than just an episode in Earth history is contingent upon the emergence of effective recycling mechanisms." 
-          Haff is insistent, however, that any transition to facilitate recycling will require an increase in energy expenditure and that "the framework for our decisions and 
-          choices [regarding this transformation and the accompanying cultural, political, and policy factors] will be shaped and guided by the needs of the technosphere 
-          as well as by human needs." 
-        <p>
-          It would therefore be timely, if not imperative, to explore these ideas in depth, and with urgency, possibly with greater input from 
-          complexity science, biology, philosophy, and other associated disciplines. For the range of hypothetical interventions into the evolution of large-scale technological 
-          systems, and the ability to freely implement any of them, may not be something our species can take for granted. And if this is true, not just of our current 
-          relationship to the technosphere, but also for a variety of both natural and artificial complex systems that humans are entwined with, then we may be driven to retool 
-          how we think about ethics and governance in relationship with techno-bio-social planning and design, and notions of 
-          autonomy, agency, control, and individuality in this context. That is to say, we may benefit from using knowledge about which natural regularities of complex 
-          hierarchical systems constrain human action to assess which normative frameworks, or which political systems or modes of social organization, might be the most salient 
-          and beneficial for governing human behaviour relative to the many systems which we may find ourselves coupled with now and in the future. 
-        <p>
-          <br>
-          <a class="top" href="#top">Return to Top ↗</a>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400&display=swap" rel="stylesheet">
+   </head>
+   <style>   
+      ::selection {
+      background: #eedc82;
+      }
+      body {
+      font-family: 'Figtree', sans-serif;
+      }
+      header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      border: 1.5px solid black;
+      padding: 20px;
+      z-index: 100;
+      }
+      nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      }
+      nav li {
+      list-style: none;
+      }
+      .wrt a {
+      color: transparent;
+      text-shadow: 0 0 25px #666666;
+      }
+      nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 29px;
+      padding: 10px;
+      }
+      .text {
+      margin-top: 10px;
+      padding: 30px;
+      border: 1.5px solid black;
+      }
+      .title { 
+      font-size: 29px; 
+      border-bottom: 1.5px solid black;
+      padding-bottom: 3px;
+      margin-bottom: 38px;
+      }
+      .subtitle {
+      font-size: 29px; 
+      padding-bottom: 5px; 
+      border-bottom: 1.5px dotted black;
+      }
+      .p {
+      font-size: 23px;   
+      }
+      .text a {
+      text-decoration: underline;
+      text-decoration-color: red;
+      color: black;
+      }
+      .text a:hover {
+      text-decoration: none;
+      background-color: red;
+      }
+      .txtimg {
+      display: block;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .quote {
+      margin-left: 30px; 
+      font-size: 20px;"
+      }
+      @media (max-width: 768px) {
+      html {
+      scroll-padding-top: 200px;
+      }
+      nav ul {
+      flex-direction: column;
+      }
+      nav a {
+      font-size: 25px;
+      }
+      .title {
+      font-size: 25px;  
+      }
+      .subtitle {
+      font-size: 25px;  
+      }
+      .p {
+      font-size: 17px;   
+      }
+      .txtimg {
+      width: 100%;
+      }
+      .quote {
+      margin-left: 30px; 
+      font-size: 15px;"
+      }
+      }
+   </style>
+   <body>
+      <a id="top"></a>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="/index.html">organism.zero</a></li>
+               <li><a href="/img.html">images 🌀</a></li>
+               <li class="wrt"><a>writing 💬</a></li>
+               <li><a href="/abt.html">about 👥</a></li>
+               <li><a href="/scl.html">social 🕸</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div class="text">
+      <div class="title">
+         Hierarchical Transitions + the Rules of the Technosphere
       </div>
-    </div>
-  </body>
-  <script></script>
+      <div class="p">
+         <img class="txtimg" src="sphereFolding.jpeg"></p>
+         <div class="p">
+            <p class="subtitle">Sections
+            <p style="margin-left: 30px">
+               ↘ <a href="#ts">Introducing the Technosphere</a>
+               <br>
+               ↘ <a href="#ht">Hierarchical Transitions</a>
+               <br>
+               ↘ <a href="#idah">Intrinsic Duplication + Ancestral Haemoglobin</a>
+               <br>
+               ↘ <a href="#ed">Extrinsic Duplication + Hierarchic Biological Complexity</a>
+               <br> 
+               ↘ <a href="#emcd">Endosymbiosis, Multicellularity, Complexity Drain</a>
+               <br>
+               ↘ <a href="#ct">Concluding Thoughts</a>
+            </p>
+            <p>
+               <br>
+               Last year I had the opportunity to attend an Environmental Humanities graduate seminar at the University of British Columbia with 
+               <a href="https://mcmaster.academia.edu/DerekWoods">Derek Woods</a>. While I was unable to register due to a full course load,
+               I dropped in on a single session where the topic of discussion was “Planetary Technics.” During the seminar I began contemplating some 
+               hazy connections between certain themes relating to a paper we read about large-scale technological systems (which I’ll introduce in the 
+               following section) and some ideas in theoretical biology regarding the collective dynamics of major hierarchic 
+               transitions. The following text attempts to flesh out these conceptual relationships in more detail. 
+            <p>
+               This piece is a work in progress. Initially, I only intended to engage with two resources, one text and one lecture, putting them in 
+               dialogue with one another to tease out their similarities and chart future research directions. Naturally, as I was writing I encountered
+               new references that complemented this project and new texts, ideas, and thinkers began to orbit around my efforts. While far from complete, 
+               I’ve done my best to integrate some of these new resources into the following piece. Unlike a polished text with a focused narrative,
+               my writing here is an attempt to feel my way through a set of ideas, documenting my thoughts as I piece them together. My hope is that 
+               I’ll continue to develop and refine this line of thinking long after this piece has been shared with you here, 
+               especially as it has become increasingly apparent that this topic is much richer than I’d first imagined.
+               <a id="ts"></a>
+            <p>
+               <br>
+            <p class="subtitle">Introducing the Technosphere
+            <p>
+               The readings for the seminar that week touched on a range of topics relating to technology, media, geology, ecology, 
+               capitalism, and the <a href="https://en.wikipedia.org/wiki/Noosphere">noosphere</a>. Among them was 
+               <a href="https://journals.sagepub.com/doi/10.1177/2053019614530575">Humans and Technology in the Anthropocene: Six Rules</a>, a fascinating 
+               paper on the quasi-autonomous dynamics of planetary-scale technological systems, authored by Emeritus Professor of Geology and Civil and 
+               Environmental Engineering, <a href="https://cee.duke.edu/faculty/peter-haff">Peter Haff</a>. 
+               In the text, Haff attempts to encapsulate said dynamics using the following six rules:
+            <p>
+            <p style="margin-left: 30px"> 
+               ① The rule of inaccessibility 
+               <br>
+               ② The rule of impotence 
+               <br>
+               ③ The rule of control 
+               <br> 
+               ④ The rule of reciprocity 
+               <br> 
+               ⑤ The rule of performance 
+               <br>
+               ⑥ The rule of provision 
+            </p>
+            <p>
+               Each of these rules is meant to express an important feature of large-scale, hierarchically-nested or stratified technological systems while also defining 
+               how humans are compelled to operate in relation to them. Those looking for a more comprehensive account of these rules are encouraged to consult the entire 
+               paper (linked above) as this piece will not discuss them in great detail. In a nutshell, however, they can be summarized by the following:
+            <p>
+            <p style="margin-left: 30px"> 
+               ① Inaccessibility: Differences in size or scale of two or more systems strongly limits precise interactions between their local variables.
+               <br>
+               ② Impotence: Larger scale systems constrain lower-tier components and are therefore generally unresponsive to most behavior of these nested subsystems.
+               <br>
+               ③ Control: No individual part may directly control or cause a system's behaviour but can act in such a way to more effectively enable the system to maintain viability.
+               <br> 
+               ④ Reciprocity: Symmetrical interactions between two or more systems are limited to those sharing the same stratum or scale. 
+               <br> 
+               ⑤ Performance: Some actions of most system parts are compelled to support the function of the system to which they belong. 
+               <br>
+               ⑥ Provision: Higher-stratum systems contribute to the maintenance of a suitable environment for their components so as to enable their support function behaviour. 
+            </p>
+            <p>  
+               Now, there are evidently many ways to interpret something as broad as a planetary-scale or large-scale technological system. Indeed, comparable 
+               forms of this general idea––i.e. a global sphere produced by and consisting of aspects of human reason, scientific knowledge, and technological development––have
+               been explored before through concepts like the <a href="https://en.wikipedia.org/wiki/Anthroposphere">Anthroposphere</a>, 
+               <a href="https://www.sociostudies.org/almanac/articles/conceptions_of_a_global_brain_an_historical_review/">Metaman, Conscious-Technology, The Global Brain</a>, 
+               and the <a href="https://en.wikipedia.org/wiki/Noosphere">Noosphere</a>. 
+               Haff’s specific formulation of this idea is what he calls the <i>technosphere</i>. I'll begin with some descriptions of this term to set the stage for the 
+               connections I’m interested in exploring between Haff's work and the idea of hierarchic transitions in biology.
+            <p>
+               In an academic context, the word “technosphere” can be traced back to a <a href="https://sci-hub.ru/10.1109/MSPEC.1968.5214690">
+               1968 text</a> by biomedical engineer and biological control-theory researcher J. H. Milsum, although Haff has made the term his 
+               own through a number of publications in the last decade or so (e.g. see <a href="www.pne.people.si.umich.edu/PDF/Haff 2013 Technology as a Geological Phenomenon.pdf">
+               1</a> and <a href="https://sci-hub.ru/10.1177/2053019616677743">2</a>), many of which being thematically allied with a growing literature on 
+               the Anthropocene. For Haff, the technosphere is said to be the technological analogue to the various natural geological paradigms or 
+               <a href="https://en.wikipedia.org/wiki/Outline_of_Earth_sciences#Earth's_spheres">planetary spheres</a> that constitute and sustain the Earth 
+               system, such as the geosphere, the hydrosphere, the atmosphere, or the biosphere. Haff notes, for instance, that all of the aforementioned 
+               systems are global in their extent, autonomous to some degree, and involve the widespread appropriation of resources. General commonalities
+               aside, a more specific albeit contracted description of the technosphere is as follows:
+            <p style="margin-left: 30px">
+               A global interconnected system of 
+            </p>
+            <p style="margin-left: 50px">
+               ◾ Technical artifacts 
+               <br>
+               ◾ Social structures
+               <br>        
+               ◾ Physical infrastructure 
+            </p>
+            <p style="margin-left: 30px">
+               which constitute
+            </p>
+            <p style="margin-left: 50px">
+               ◾ The totality of the built human environment
+               <br>
+               ◾ The particular energy and resource transformations underpinning the system’s “metabolic” profile
+               <br>        
+               ◾ The emergent principles that govern our relationship with it. 
+            </p>
+            <p>
+               Per this definition, the technosphere is not simply the aggregate of all technological objects––much like the biosphere is not the 
+               mere sum of all planetary biomass––but rather has dynamic emergent properties that result from the organization of its various components 
+               and the associations between them, including constraints, incentives, deterrents, and other relational processes associated with the system’s 
+               functioning. This central characterization of a complex system such as the technosphere or the biosphere is to be clearly understood and 
+               we’ll return to this point in a moment. 
+            <p>
+               We can get a richer, more extensive view of what is meant by the technosphere in Haff's own words in the following passage taken from a 2014 text 
+               titled <a href="https://pne.people.si.umich.edu/PDF/Haff 2013 Technology as a Geological Phenomenon.pdf">Technology as a Geological Phenomenon: 
+               Implications for Human Well-Being</a>:
+            <p class="quote">
+               “[The technosphere is]…the set of large-scale networked technologies that underlie and make possible rapid extraction from the Earth of large 
+               quantities of free energy and subsequent power generation, long distance, nearly instantaneous communication, rapid long-distance energy and 
+               mass transport, the existence and operation of modern governmental and other bureaucracies, high-intensity industrial and manufacturing 
+               operations including regional, continental and global distribution of food and other goods, and a myriad additional ‘artificial’ or 
+               ‘non-natural’ processes without which modern civilization and its present 7 × 109 human constituents could not exist. If the term 
+               ‘anthroposphere’ is meant to emphasize the role of human beings as causative agents responsible for Earth transformations that define the 
+               Anthropocene, the use of ‘technosphere’ suggests a more detached view of an emerging geological process that has entrained humans as 
+               essential components that support its dynamics.”  
+            </p>
+            <p>
+               Haff once more, from the more recent article which we read in the seminar: 
+            <p class="quote">
+               “The technosphere includes the world’s large-scale energy and resource extraction systems, power generation and transmission systems, communication,
+               transportation, financial and other networks, governments and bureaucracies, cities, factories, farms and myriad other ‘built’ systems, as well
+               as all the parts of these systems, including computers, windows, tractors, office memos and humans. It also includes systems which traditionally
+               we think of as social or human-dominated, such as religious institutions or NGOs. The Haber-Bosch process and associated technologies, 
+               responsible through synthetic fixation of nitrogen and distribution of resulting fertilizers for providing about 40% of the world’s dietary 
+               protein (Smil, 2002), is a specific example of a globally distributed component of the technosphere.”
+            </p>
+            <p>
+               These excerpts highlight the many energetic, informational, productional, and logistical processes enabled by our planetary technological system
+               as well as some concrete examples of the interrelated artifactual 
+               subsystems which the technosphere comprises, i.e. the various contemporary networked technologies nested within the global system. Both these 
+               aspects (built artifactual systems and the myriad dynamic processes they facilitate) are part and parcel of the descriptions above and draw our attention 
+               to the sheer scale of the technosphere and the scope of what component subsystems and processes constitute this technological system. From relatively 
+               simple products like office memos and fertilizer, to complex intergenerational
+               socio-cultural forms like religious institutions, cities, and governments, the magnitude of the technosphere is vast and totalizing, assimilating 
+               nearly all phenomena connected to the workings of contemporary human civilization, including the behaviour of human subjects themselves.
+            <p>
+               This leads us directly to one of the central aspects of Haff’s theory of large-scale technological networks: his insistence on a shift in our 
+               thinking away from the “natural assumption that the technosphere is primarily a human-created and controlled system” and towards “the idea that 
+               the workings of modern humanity are a product of a system that operates beyond our control and that imposes its own requirements on human 
+               behaviour.” Put more plainly: "...humans are components of a larger sphere they did not design, do not understand, do not control and from which 
+               they cannot escape.." Haff notes that similar positions have been articulated before in other scholarly contexts, particularly by political 
+               and social theorists, such as <a href="https://mitpress.mit.edu/9780262730495/autonomous-technology/">Langdon Winner</a> and 
+               <a href="https://ia803209.us.archive.org/2/items/JacquesEllulTheTechnologicalSociety/Jacques%20Ellul%20-%20The%20Technological%20Society.pdf">
+               Jacques Ellul</a>, who have written about the emergence of modern autonomous technological systems and 
+               "whose works go a long way toward disabusing the notion that humans operate as independent agents in the modern technological world."  
+            <p>  
+               One way of thinking about this relationship between human agents and the technosphere is to frame it in terms of how the properties of <i>organization</i>
+               and <i>constraint</i> operate in complex systems. Haff devotes a section to these ideas, which I will expand on in more detail once we get into the biology 
+               of hierarchic transitions. For now it will suffice to say that the general idea is that for a complex dynamic system to persist through time and space, 
+               that is, to maintain some systemic coherent unity at a relevant temporal and spatial scale,  
+               most of its component parts and processes must behave, and be organized in relation to one another, in a manner that is consistent with the system’s
+               ability to reproduce itself as a unity. In other words, <i>systemic consistency and robustness requires functional organization, implying constraints
+               on the degrees of freedom accessible to constituent components</i>. 
+            <p>
+               Once we're committed to conceiving of the technosphere as a higher-level unity defined by organizational relations between coupled subsystems, 
+               we can begin to see how the interests of human agents, as subordinate elements of the macro-system, must be constrained to some extent to 
+               align with the properties and/or emergent principles of the complex dynamic system within which they are embedded. Haff's 2014 text supplies us
+               with some examples of what these constraints could be, ranging from "hard" and tangible constraints like 
+               architectural and infrastructural barriers, to "soft" and more abstract or normative regulations, such as incentives and deterrents for 
+               behaviour that supports or interferes with the functioning of a given host system. Taken together, these features of the technosphere are
+               reflected in the first 4 rules: planetary scale, distributed systemic functionality (control) and organizational constraint (impotence) inhibits 
+               direct causal interactions between different strata (inaccessibility) of a large, complex, dynamic technological system, and such a system may only 
+               be affected by other systems which inhabit comparable scales and are capable therefore of mutually interaction (reciprocity).     
+            <p>   
+               Importantly, the intertwining of humans and the technosphere also means that we are increasingly reliant upon its functioning to support our 
+               well-being and continuation as a species. For instance, Haff puts forth the following estimation to really drive home the extent to which 
+               contemporary human populations are beholden to the organizational constraints, and affordances, of large-scale 
+               technological systems: "the pre-Anthropocene, pre-technological … human population was perhaps 10 million"
+               and "the ramp-up of technology from pre-history through, e.g., dynastic China, Rome and medieval Europe to today’s global technology has led to 
+               the expansion of this population to a level approaching 10 billion today … suggesting that on the order of 999 out of every 1000 humans owe their 
+               existence and their wellbeing to technological systems." 
+            <p>
+               Conceived of as an emerging geological process, Haff's emphasis on the quasi-autonomous property of the technosphere frames
+               how our networked technological systems interface with other Anthropocene-related phenomena in a manner which understates human autonomy over the 
+               production and transformation of the built environment. 
+               After all, the Anthropocene denotes a geological epoch where significant impacts on the planet's climate and ecosystems are 
+               the result of the activity of humankind, and therefore part of the uniqueness of Haff’s contribution to such discourse is to invert the 
+               directionality of this causal relation. As Haff writes: "The technosphere is a system for which humans are essential but, nonetheless, 
+               subordinate parts … This does not mean that humans cannot influence its behavior, but that the technosphere will tend to resist attempts to 
+               compromise its function." Haff again: "humans have become entrained within the matrix of technology and are now borne along by a supervening 
+               dynamics from which they cannot simultaneously escape and survive." 
+            <p> 
+               However as we'll see, the general framework of this perspective––that the emergent dynamics
+               of the technosphere restrict and recruit human action to mutually support continued functioning of the resultant macrosystem––will also be crucial to 
+               connecting this novel planetary-scale paradigm with certain evolutionary principles of biological complexity facilitated by hierarchical constraint,
+               possibly providing new insight into both. 
+            <p>
+               To summarize: the technosphere is a composite system and planetary paradigm comparable to other geological phenomena. Its components include 
+               everything from biological organisms to technological artifacts, social institutions, and emergent relational processes which both 
+               enable and are enabled by the global system. These organizational constraints play a significant role in ensuring the reciprocal survival and functioning 
+               of both the whole system and its natural and artificial components. Conceptualizing the nature of large-scale technological systems in the aforementioned 
+               manner might also illuminate equivalences 
+               between the dynamics of the emerging technosphere and certain hierarchically-nested biological systems.   
+            <p>
+               The remainder of this text will focus on drawing comparisons between these principles, some of Haff's rules, and the ideas of <a href="https://anthropology.berkeley.edu/terrence-w-deacon">
+               Terrence Deacon</a> and <a href="https://scholars.duke.edu/person/dmcshea">Daniel McShea</a> regarding evolutionary synergies, hierarchic
+               transitions in coupled systems, and the transformations in complexity and autonomy that accompany such processes. In order to make
+               these connections, and clarify some of the terms I’ve just introduced, I turn to some key points from 
+               <a href="https://www.youtube.com/embed/aWMEnIYEaQQ">a talk</a> that Deacon gave in 2017, as well as <a href="https://pubmed.ncbi.nlm.nih.gov/36075549/">
+               a paper</a> published in 2022, each pertaining to the subject of hierarchic transitions in biological evolution.
+               <a name="ht"></a>
+            <p>
+               <br>
+            <p class="subtitle">Hierarchical Transitions
+            <p>
+               A couple of years ago I came across a presentation on YouTube titled <a href="https://www.youtube.com/watch?v=aWMEnIYEaQQ">"Hierarchic Transitions 
+               in Evolution"</a>, delivered by neuroanthropoligist <a href="https://anthropology.berkeley.edu/terrence-w-deacon">Terrence Deacon</a> 
+               for a virtual seminar series associated with Binghampton University’s 
+               <a href="https://www.binghamton.edu/evos/">Evolutionary Studies Program</a>. I've also discovered more recently that the ideas Deacon covered in 
+               this talk have also been articulated in a 2022 article in the journal Biosystems titled <a href="https://pubmed.ncbi.nlm.nih.gov/36075549/">A 
+               Degenerative Process Underlying Hierarchic Transitions in Evolution</a>. In both these resources, Deacon speculates on how the hierarchic 
+               complexity of organismal structure, function, and form are generated through evolutionary processes. Generally speaking, hierarchic complexity is 
+               a term used here to describe a biological phenomenon whereby numerous autonomous living entities develop co-dependent or synergistic behaviours 
+               with the collective relations of an emergent system, sometimes comprised of two or more coupled systems, and often leading to the stabilization 
+               of new macro-scale biological units (such as pluricellular or multicellular organisms). Hierarchic complexity also denotes what some believe to 
+               be a resultant decrease in the functional autonomy of the novel system's constituent entities that occupy lower-tier strata relative to the emergent 
+               global whole. Owing in part to the lack of any widely accepted theory of how such transformations in hierarchic complexity occur, Deacon has 
+               developed his own framework for thinking about how these organizational and morphological features of living systems emerge at various scales, 
+               and how this process might be implicated in <a href="https://global.oup.com/academic/product/the-major-transitions-in-evolution-9780198502944">
+               evolutionary developments such as transitions in individuality</a>. Much like Haff's work on the technosphere, Deacon's theory of hierarchic 
+               complexity reflects a similar concern for principles of organization and constraint, distributed functionality, and gradations of 
+               autonomy across multiple scales of complex hierarchically-structured systems.  
+            <p>
+               Deacon's thoughts on this topic are contributions to an existing body of modern literature on the phenomenon of hierarchical transitions, or evolutionary 
+               transitions in individuality, that is nearly a century and a half old. As mentioned above, this is a process by which 
+               groups of discrete organisms collectively form higher-level aggregate entities or novel concrete biological individuals. In this context, 
+               a biological entity or individual refers to: <i>a temporally-enduring spatially-individuated being with properties or 
+               functions such as feeding, reproduction, and self-preservation that belong to the system at the highest-level</i>. A broad range of examples can be 
+               used to illustrate this idea, including the <a href="https://en.wikipedia.org/wiki/Symbiogenesis">origin of eukaryotic cells via prokaryotic symbiosis</a>,
+               <a href="https://en.wikipedia.org/wiki/Multicellular_organism#Origin_hypotheses">multicellular entities arising from unicellular organisms</a>, and 
+               <a href="https://en.wikipedia.org/wiki/Superorganism">colonies formed from pluricellular individuals</a>. An early treatment of this topic in the 
+               modern history of biology can be found in <a href="https://en.wikipedia.org/wiki/Herbert_Spencer">Herbert Spencer</a>'s 19th c. works 
+               <a href="https://www.gutenberg.org/ebooks/54612">Principles of Biology</a> and <a href="https://praxeology.net/HS-SP.htm#firstprinciples">First 
+               Principles</a>, which theorized, in the parlance of their time, about the nature of hierarchically-nested scales of biological organization. 
+               In 1942, a series of papers published together under the title <a href="https://sci-hub.se/10.1093/aesa/36.1.142">Biological Symposia, Vol VIII. 
+               Levels of Integration in Biological and Social Systems</a> sought to discuss the relationship between such varied subjects as colonial Protozoa, 
+               the origins of multicellularity, and comparisons of human and insect societies. Throughout the latter half of the 20th c., major contributions 
+               to the literature included texts and publications such as <a href="https://en.wikipedia.org/wiki/Howard_H._Pattee">H. H. Pattee</a>’s 
+               <a href="http://mechanism.ucsd.edu/teaching/f17/phil204A/readings/Pattee%201970%20The%20Problem%20of%20Biological%20Hierarchy.pdf">
+               The Problem of Biological Hierarchy</a> (1970), <a href="https://www.nbi.dk/~natphil/salthe/">Stanley N. Salthe</a>’s 
+               <a href="http://library.lol/main/5624738534618306F6FDB6688CA2EFC5">Evolving Hierarchical Systems</a> (1985), 
+               <a href="https://en.wikipedia.org/wiki/Leo_Buss">Leo Buss</a>’ <a href="https://archive.org/details/evolutionofindiv0000buss/page/n5/mode/2up">
+               The Evolution of Individuality</a> (1987), and <a href="https://en.wikipedia.org/wiki/John_Maynard_Smith">John Maynard Smith</a> and 
+               <a href="https://en.wikipedia.org/wiki/E%C3%B6rs_Szathm%C3%A1ry">Eörs Szathmáry</a>’s <a href="https://archive.org/details/majortransitions00mayn">
+               The Major Transitions in Evolution</a> (1995), as well as concepts like <a href="https://en.wikipedia.org/wiki/Valentin_Turchin">Valentin Turchin</a>’s
+               <a href="https://en.wikipedia.org/wiki/Metasystem_transition">‘Metasystem Transitions’</a> (1970), and the notions of 
+               <a href="https://www.informationphilosopher.com/solutions/scientists/polanyi/Polanyi_Life_Structures.pdf">‘Dual Control’ and ‘Hierarchical 
+               Boundary Conditions’</a> (1968) in the work of <a href="https://en.wikipedia.org/wiki/Michael_Polanyi">Michael Polanyi</a>. It should be noted as 
+               well that this text only engages with a minute sampling of available resources on this topic.    
+            <p>
+               In his lecture, Deacon first sets out to address what he sees as a contradiction in “replicator-selection stories” of evolution, i.e. explanations 
+               of evolutionary phenomena most commonly associated with <a href="https://en.wikipedia.org/wiki/The_Selfish_Gene">selfish gene theory</a>. Deacon 
+               posits that replicator-selection theories mistakenly overemphasize absolute autonomy and controlled replication as the primary and conserved features 
+               underpinning evolving biological systems, instantiated in what is thought to be the most fundamental causal unit of the organism: the genetic components 
+               of individual cells. Deacon reasons, however, that the existence of evolving hierarchically-complex living systems implies coordination and regulation 
+               across a multitude of intraorganismal and extra-cellular spatial and temporal scales, and that the autonomy of the constituents of such systems, and 
+               the degree of control they can exercise, must therefore be relinquished to some degree if synergies between these various interdependent levels are to 
+               develop at all. In his most recent paper, Deacon substantiates this point by drawing from a 2017 article titled <a href="https://www.sciencedirect.com/science/article/pii/S0022519316304349">
+               On the Developmental Self-Regulatory Dynamics and Evolution of Individuated Multicellular Organisms</a>, written by theoretical biologist Felipe Veloso, 
+               who Deacon believes “unambiguously demonstrates that the development of multicellular animals depends on a shift of control from intracellular 
+               genetic constraints to extra-cellular relational constraints that emerge at the organism level.”
+            <p>
+               To further develop this perspective, Deacon turns to the important work of evolutionary biologist Leo Buss, and the phenomena of multicellular 
+               individuality in plants, animals, and fungi, to provide examples of a class of systems which favour sophisticated cooperation and exhibit autonomy-limiting 
+               properties at various scales of their organization. For instance, Deacon describes how fungi enable cellular cooperation via cell membranes which are 
+               porous enough to favor widespread homogeneity in cell-type and tissues. The logic here is that having cell membranes with greater permeability makes it 
+               difficult to correlate the influence of a set of genes, or a genome, with controlled effects in the immediate surroundings of its local nucleus, 
+               rather than that of neighbouring cells. In other words, if the membrane cannot reliably regulate what enters and leaves the cell, gene products can have
+               effects both inside and outside the cell in an untargeted manner, nullifying any strong demarcation between one cell and any other. As a result, from any 
+               individual cell's "point of view", it is unfeasible to guarantee whether their genes will be the ones reproduced in the fruiting body. 
+               Cooperative reproductive behaviour among cells may then emerge as a compensatory mechanism for 
+               this constraint on the absolute reproductive autonomy of any given cell in the collective. In the case of plants, he points to the structural limitations 
+               of rigid cell walls and their role in restricting movement and fostering highly deterministic cell fates. This is a more coercive evolutionary strategy 
+               than that of fungal organisms, but nonetheless facilitates systemic cohesion while dampening cellular autonomy. Briefly put: multicellular synergistic 
+               cooperation among cellular components “is accomplished in fungi by preventing genetic determination of distinct tissue types, in plants by eliminating 
+               mobility of cells, and in animals by determination of cell lineage fates by maternal factors prior to cell-specific gene expression.” In all cases, 
+               multicellular eukaryotic systems are thought to have achieved stabilized individuation in part by preventing any given cell from fully 
+               and independently determining whether it can replicate or persist alone. Without this constraint, the integrity of the global system is likely 
+               to be compromised by selfish unfettered replication, such as that which occurs during cancerous cell growth. 
+            <p>
+               Here we return to the description I began to sketch in the previous section about organization and constraint in dynamic systems. Both Haff and Deacon––as well 
+               as many of those working on the question of hierarchic transitions more generally––are tapping into a very similar framework for thinking about related 
+               phenomena in biological and social reality. Much like the dynamics of multicellularity then, the technosphere and its dynamics can be viewed as a hierarchical 
+               system that exploits similar principles of constraint in its organizational constitution to ensure the reciprocal and synergistic functioning of an emergent global 
+               whole relative to its parts, irrespective of the material basis of the components. One principal difference, however, between Haff and Deacon is that the former 
+               focuses mostly on an analysis of how such systems <i>work</i>, while the latter is providing a theory for how such systems <i>got to be that way</i>.
+            <p>
+               Deacon's question, then, is ultimately an evolutionary, or perhaps historical, one: i.e. <i>how, then, might any form of synergistic cooperation underpinning 
+               hierarchically-organized biological systems, and the implicit constraints on autonomy that result from such organization, occur in the first
+               place?</i> Deacon attempts to address this with the following proposal: 
+            <p style="margin-left: 30px">
+               ◾ In biology, environmental changes, as well as certain intra-organismal dynamics, can alter the selection pressures maintaining a particular trait. 
+               When the efficacy of a source of selection is weakened or eliminated entirely this is termed <a href="https://sci-hub.ru/10.1016/j.tree.2009.03.010">
+               "relaxed selection"</a> and can lead to the reduction or loss of traits and/or functions. In some cases, however, it can instigate biological novelty.
+               <br>
+               ◾ Building on the latter of these two outcomes, Deacon speculates that if selection is relaxed on some functional trait of a system or 
+               entity (let's say system or entity 'A'), this opens a space of possibility, outside the scope of selection pressures, for random explorations
+               of unprecedented interactions between 'A' and other, often molecular, system or entity ('B').
+               <br> 
+               ◾ Should advantageous functionality emerge as a result of 'A' and 'B's interactivity, selection pressure can now shift to target the synergistic
+               composite of 'A', 'B' and their relationality, amplifying their mutual dependency.
+               <br> 
+               ◾ As this relationship develops, adaptively valuable functions once carried out independently by 'A' and/or 'B' may now become transformed, or distributed 
+               across the interactions of the emergent coupled system, becoming increasingly constituted and selected for at this higher level of organization involving how 'A' 
+               and 'B' interact synergistically. 
+               <br> 
+               ◾ Furthermore, as this coupling is strengthened through selection over evolutionary time, 'A' and/or 'B' will progressively assume the functional 
+               role of a component in the context of the larger novel macro-system. 
+            </p>
+            Importantly, Deacon submits that this new hierarchically-organized system with synergistic,
+            distributed functionality is only sustainable if its development ensures that the loss of autonomy occurring at the lower levels of the constituent 
+            parts is also beneficial for said components, and that this benefit is sufficient to sustain the integrant subsystems' ability to perform 
+            support functions and contribute to the persistence and maintenance of higher-level functionality and macro-systemic or global order. This point will 
+            be especially salient as we dive into Haff's rules ⑤ and ⑥ in later sections. In the meantime, my hope is that the reader has begun to see an image taking shape of 
+            the conceptual resemblances between Haff and Deacon's perspectives, each an analysis of emergent hierarchically-organized systems where control and 
+            functionality are distributed across the collective relations of components whose existence and autonomy has become subordinated to, and 
+            dependent on, global identity and constraint.       
+            <p>
+               To contrast with the slightly more abstract theorization in the previous paragraphs, the following sections turn to some specific examples 
+               of relaxed selection and hierarchical transitions which Deacon uses to clarify and support this theory. 
+               <a name="idah"></a>  
+            <p>
+               <br>
+            <p class="subtitle">Intrinsic Duplication + Ancestral Haemoglobin
+            <p>
+               To build his case, Deacon must establish an explanation of the scale-invariant continuity of this process of relaxed selection and hierarchic 
+               complexity, beginning at the molecular, or <i>intrinsic</i> scale, and moving towards the <i>extrinsic</i> scale of intercellular and 
+               extra-organismal dynamics. A representative case of one circumstance known to facilitate relaxed selection at the molecular scale is 
+               <a href="https://en.wikipedia.org/wiki/Gene_duplication">gene duplication</a> 
+               or polyploidy, wherein "genes or genomes replicate such that selection can act on one copy but is relaxed on the other." Gene duplication has been 
+               hypothesized to play an important role in the evolution of biological novelty through the generation of redundant loci which become free to explore 
+               non-deleterious transformations in phenotypic structure and/or functions––a “random walk” away from the original function––while a duplicate gene 
+               continues to perform essential ancestral tasks. Deacon speaks to this process in greater detail in his 2022 Biosystems article: 
+            <p class="quote">
+               "[non-deleterious point mutations in a gene duplicate] may result in a progressive loss of the specificity of protein function, with some functional 
+               associations being lost while other related interactions 
+               maintained. Whereas the initial evolution of protein function may involve structural compromises to accommodate its multiple associations to other 
+               molecules, multiple variant forms may provide a “have your cake and eat it too” option, with each variant form able to evolve greater specificity for 
+               one or another of these sub-functional capacities. In other words, the duplication, relaxation of selection, and random walk can provide a kind of 
+               exploration of the space of possible synergistic relationships that lie, in effect, in the “function space” just adjacent to an existing function. This 
+               is a recipe for increasing functional complexity."
+            </p>
+            <p>
+               In Deacon's view, the underlying principles shaping this process of intrinsic duplication, relaxed selection, and random walk, and the exploration
+               of possible synergistic relations in a novel function space that it engenders, can be generalized and expanded to encompass analogous processes
+               occurring extrinsic to biological entities as well. That is to say, while intrinsic duplication operates at genetic, 
+               molecular, and regulatory levels, Deacon conjectures that extrinsic duplication can also occur at organismal and social scales. 
+               This will be key to understanding the links between Deacon's theoretical considerations and hierarchical constraint in planetary technological systems. 
+               In his lecture, Deacon provides numerous examples of intrinsic duplication involving synergies among haemoglobin variants, the acetylcholine receptors 
+               that compose an ion channel, and regulatory genes shaping body-plan segmentation, to name a few. In his more recent paper he focuses solely on a subset 
+               of these, one of which I'll summarize quickly before proceeding to describe extrinsic duplication.
+            <p>
+               In the case of the globin gene family, Deacon discusses how selection may have become relaxed for duplicate descendants of an ancestral haemoglobin
+               gene, allowing mutations to accrue in less evolutionarily-conserved structural elements (as opposed to, say, genes associated with the shape of the 
+               oxygen-binding element). Over time, certain structural variations in ancestral haemoglobin populations afforded the possibility for a synergistic 
+               complementarity between variants to arise, such that two novel molecular structures (α and β haemoglobin) eventually found themselves capable 
+               of binding with one another, producing a tetramer capable of carrying not one but four iron atoms, enabling superior oxygen transportation 
+               throughout the vascular system. 
+            <p>  
+               In this prototypical example of a hierarchic transition via intrinsic duplication, "the alpha and beta hemoglobin duplicates each acquired independent 
+               changes in shape but minimal changes in oxygen binding capacity in their separate divergence from the original “ancestral” hemoglobin gene. Changes 
+               that increased the stability of tetrameric binding appear to have been favored by natural selection with respect to one another, probably because of 
+               the superior oxygen transport capacity of the tetrahedral form." In other words, as relaxed selection facilitated sampling for combinations of the 
+               two systems (interactive structural coupling of alpha and beta haemoglobin), this in turn could enable selection to target and stabilize a 
+               synergistic, higher-level function (amplified oxygen transportation), distributed globally across a new coupled system (haemoglobin tetramer). 
+               <a name="ed"></a>  
+            <p>
+               <br>
+            <p class="subtitle">Extrinsic Duplication + Hierarchic Biological Complexity
+            <p>
+               Deacon’s notion of hierarchic complexity via extrinsic duplication finally brings us outside the intracellular realm of molecular variation and 
+               structural coupling into a domain of complex coupled interactions between organisms and/or environmental changes, while bridging both. In both resources 
+               referenced in this text, Deacon provides a number of examples to flesh out his notion of extrinsic duplication, including 
+               <a href="https://en.wikipedia.org/wiki/Symbiogenesis">endosymbiosis</a>, 
+               <a href="https://www.nytimes.com/2013/12/10/science/vitamins-old-old-edge.html">exogenous Vitamin C intake and a loss of function of the GULO gene</a>, 
+               the emergence of <a href="https://en.wikipedia.org/wiki/Eusociality">eusocial collectives</a> and the diminished 
+               autonomy of component organisms, and the development of language in humans and song structure in finches. Unlike intrinsic duplication, which often 
+               involves genetic, structural, or segmental duplications internal to the biological system, many of these cases involve interactions between an organism 
+               and an external and duplicate source of an intrinsic function. Quoting Deacon at length in his discussion of the transition from the endogenous metabolic 
+               synthesis of ascorbic acid to exogenous dietary dependency in anthropoid primates: 
+            <p class="quote">
+               "...reduced selection on the intrinsic function that is thereby provided with redundant support from 
+               outside will allow the intrinsic capacity to degrade..." and "...selection can be redistributed fractionally across highly diverse, and previously independent, 
+               genetic loci and epigenetic mechanisms ... extrinsic ascorbic acid dependency provides us with an opportunity to look at some of the secondary consequences of 
+               this degradation. The reduction of purifying selection maintaining this enzyme in turn would have unmasked selection on a variety of other traits that help 
+               guarantee the availability of this now essential nutrient. Thus, the behavioral flexibility that initially allowed primates to regularly forage on fruit 
+               eventually “addicted” anthropoid primates to a dietary niche in which fruit acquisition and digestion were critical. Degradation of this gene and its function 
+               would have unmasked selection on many diverse traits that coincidentally supported this “addiction.” These likely included the capacity to judge the ripeness 
+               of fruit (e.g., by the evolution of three-color vision), forage on the outer limbs of trees (e.g. by arboreal locomotor adaptations), find the sugar-rich and 
+               slightly acidic content of fruit attractive (e.g. taste receptor changes), and metabolize the sugars and tolerate the ethanol that over-ripe fruits contain 
+               (e.g. by changes in liver enzymes). All of these could be considered part of an adaptive suite for guaranteeing the supply of ascorbic acid."
+            </p>
+            In other words, if relaxed selection takes place for ancestral, primarily genetic loci whose associated function has now been 
+            externally replicated by a suite of inter-organismal or environmental relations, the mechanisms underpinning this function can diversify and become distributed 
+            across a broader synergistic aggregate of genetic, epigenetic, behavioural, and/or environmental systems and relations. Furthermore, this adaptive suite of coupled
+            subsystems supplies a target for selection to act upon, facilitating stabilizing effects at the higher level of the whole novel emergent system. 
+            <p>
+               The figure below depicts a oversimplified schematic of this phenomenon, whereby a gene or set of genes (Gene(s) 4) that once corresponded 
+               directly to a phenotype (Function 4) will degrade as a result of relaxed selection owing to the presence of an external, duplicate function (Environmental Duplication). 
+               Selective pressures are now distributed across any and all loci (Function 1, Function 5, Function 1B, Function 5B) with operational roles sustaining the exogenous source 
+               for the target function. 
+               <br>
+               <img class="txtimg" src="edDiagram.jpeg">
+               Once again, we end up with the emergence and stabilization of a new synergistically-constituted systemic order whose viability is maintained through organizational 
+               constraints on the autonomy or functional independence of the elements that comprise this new adaptive suite of relations. Notably, these elements are not confined
+               to the interior of a biological system, like a cell, but involve coupling of intra-organismal and environmental or exo-organismal variables. These assorted 
+               elements––from molecular to organismal behaviour, exogenous effects, and relations with an environment or between living systems––have now been effectively recruited 
+               as component parts providing support functions for a higher-level hierarchical system. From the perspective of the macrosystem enabled by this transition in hierarchic 
+               complexity, these elements are, in some sense, what Haff might call “essential but, nonetheless, subordinate parts.”    
+            <p>  
+               The general application of this principle to major hierarchic transitions in biological evolution, or as Deacon puts it, the identification of a "generic 
+               sequence of phases in the evolutionary process..." which describe "a trajectory that is common to ... major biological transitions", brings us 
+               to two much-discussed phenomena in the literature of theoretical biology: endosymbiosis and multicellularity. Indeed, these examples sharply highlight 
+               the constraints on autonomy experienced by subordinate parts as a result of their integration into an emergent system through the process of hierarchical transition, and 
+               gives a clearer sense of the implications this understanding has for interpreting the ongoing development of the technosphere.
+               <a name="emcd"></a>  
+            <p>
+               <br>
+            <p class="subtitle">Endosymbiosis, Multicellularity, Complexity Drain
+            <p>
+               Obligate endosymbionts, particularly mitochondria, are ideal systems for thinking through the similarities between Haff’s rules and Deacon’s hierarchic complexity. There is
+               an extensive literature on the evolution of mitochondria, the organelles that synthesize ATP (the so-called ‘energy currency of the cell’) which powers a myriad 
+               of biochemical and physiological processes in nearly all eurakyrotic organisms. However, for our purposes, I will provide only a truncated description of what is known as mitochondrial 
+               <a href="https://en.wikipedia.org/wiki/Symbiogenesis">symbiogenesis</a> or the <i>endosymbiotic theory of origin</i>. According to this theory––popularized and substantiated by 
+               evolutionary biologist <a href="https://en.wikipedia.org/wiki/Lynn_Margulis">Lynn Margulis</a> following a resurgence in the idea of symbiogenesis in the 1960s––organelles in 
+               eukaryotic cells, such as mitochondria and chloroplasts, are thought to have once been free-living microbes which developed obligate endosymbiotic relationships 
+               with some proto-eukaryotic host-cells. In other words, one set of once-independent organisms were engulfed by another, and each came to depend on the other for their survival. 
+               As the energy-producing properties of these microbes became increasingly valuable to the functioning of the host cell they were progressively assimilated into the 
+               whole proto-eukaryotic cellular system. Over evolutionary time, these micro-organisms are thought to have transitioned from autonomous living entities to endosymbionts, and finally organelles.
+               Some proposed reasons for this evolutionary development include: 
+            <p style="margin-left: 30px"> 
+               ◾ The advantage conferred by possessing multiple energy producing units within a single cell
+               <br>
+               ◾ Genomic degradation of both ancestral subsystems of the nascent eukaryotic cell 
+               <br>
+               ◾ A considerable loss of autonomy at the level of the former prokaryote 
+               <br>
+               ◾ The increasingly coupled, distributed functioning of the new unified macro-system. 
+            <p>
+               Deacon highlights some of these features in his presentation and paper, noting <a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2014.0330">estimates</a> "that mitochondria have 
+               lost as much as 99% of the functional genes typically present in their bacterial ancestors" with many of these genes being transposed to the nuclear genome as a result of the transition. 
+               Many proteins critical to organelle functioning are now produced by nuclear genes, while some nuclear genes have degraded as a result of organelles performing certain metabolic 
+               functions for the cell. Deacon is certainly not the only person to articulate to this. In fact, it is <a href="https://www.nature.com/articles/nrg1271">relatively well understood</a> 
+               that the mitochondrial genome is dramatically smaller than their bacterial relatives and that many organelle processes are known to be driven by nuclear-encoded gene products.
+            <p>
+               We can summarize and restate this phenomenon using Deacon’s particular theoretical framework in the following way: during some extended period in the evolution of the eukaryotic cell, the 
+               function of energy production for some ancestral cells underwent extrinsic duplication with the presence of, and interaction with, prokaryotic microbes. This permitted selection for 
+               certain functional genetic loci in both systems to become relaxed. As a result, explorations of unprecedented modes of interaction could take place, leading to the emergence of higher-level 
+               functional synergies and accompanying genomic degradation in both systems. Selection then came to target a system with distributed, relational functionality, now comprised of coupled 
+               subunits performing partial functional roles in sustaining a higher-level synergistic composite of what were once independent units. This process became so intensified that the effects of 
+               selection eventually stabilized the novel macro-system, generating a much more rigorously consolidated whole whose components now lacked the degree of autonomy they possesed prior to this 
+               transformation: a eukaryotic cell with mitochondrial organelles. In his 2022 paper, Deacon offers the following summary, comparing endosymbiosis in the evolution of the eukaryotic cell with 
+               exogenous Vitamin C intake and the degradation of intrinsic biosynthesis in primates: 
+            <p class="quote">
+               "Both examples ... involve the degradation and reorganizational effects that characterize extrinsic duplication of function. In the case of mitochondria ... redundancy 
+               of molecular functions previously provided by the host genome, and vice versa, begins as an extrinsic duplication of functions regulated by each previously autonomous genome ... almost 
+               certainly the distinctive metabolic contributions of oxidative metabolism with its orders of magnitude increase in energy generation and of photosynthesis with the autonomy it provides were 
+               critical to the early stages of these mutual degradation processes."
+            </p>
+            This story of mitochondrial origins also resonates with dynamics familiar to Haff's rules ⑤ and ⑥, or Performance and Provision. Recall that each rule 
+            described, respectively, how some actions of parts must support the functioning of the system to which they belong, and that systems enable such support 
+            function behaviour by contributing to the maintenance of a suitable environment for said parts. These two rules give us additional points of reference 
+            for reasoning about the following: for selection to effectively shift from an individual unit to the level of functional synergies between coupled 
+            systems––as it is hypothesized to have occured in the hierarchic transition of the eukaryotic cell––we would expect the behaviour of both organisms 
+            to have complemented each other in supporting the higher-level functionality of a now-ubiquitous extant evolutionary unit capable of elevated energy 
+            production, despite the subordination of certain features of each system to the requirements of the novel global whole. We observe the former, for instance, 
+            in the organelle's role in generating metabolic energy for the eukaryotic cell (a function which is also at the foundation of sustaining complex higher 
+            animal forms). While the latter can be seen in the constraints on the mitochondria's ability to grow and/or reproduce relative to the 
+            <a href="https://www.nature.com/scitable/topicpage/mitochondria-14053590/">specific energy requirements of specialized eukaryotic cells</a>. Finally, 
+            maintenance and persistence of the eukaryotic cell is also ensured through the provision of resources and/or environments that enable the performance 
+            of support functions by its components, as evidenced by the nuclear genome gradually coming to supply resources critical to organelle reproduction and maintenance.
+            <p> 
+               Connections between the rules of the technosphere and the dynamics of multicellularity are also apparent. Consider, for instance, an organism’s immune 
+               system and rules ① (Inaccessibility) and ④ (Reciprocity): Unlike the immune cells' ability to recognize and work to neutralize harmful substances 
+               and microbial pathogens, it is nearly impossible for the higher-level individual to engage in direct and precise interactions with local variables at this 
+               scale. The aggregate agent at the highest level (i.e. the multicellular organism) must rely on the activity of lower-tier parts to engage with other systems 
+               and events that share the same stratum in order to enable defense against infection (as well as contribute to the more existential process of distinguishing 
+               the boundaries of an organism's selfhood). Recall rules ② (Impotence) and ③ (Control) as well: multicellularity provides numerous examples of organizational 
+               constraints of autonomous cell behaviour in order to facilitate the collective integrity of the emergent individual, including, but not limited to, 
+               <a href="https://en.wikipedia.org/wiki/Apoptosis">apoptosis</a>, the activities of tumour suppressor genes, the canalization of stem cells into 
+               specialized and differentiated cells and tissues, <a href="https://royalsocietypublishing.org/doi/10.1098/rsif.2016.0555">
+               bioelectric networks and top-down morphogenetiic control</a>, and <a href="https://en.wikipedia.org/wiki/Homeostasis">homeostatic regulation</a> of 
+               body temperature, blood pressure, and more. That is to say, no individual part, nor subset of individual parts, is causally responsible for a system’s 
+               behaviour and each are instead constrained by emergent dynamics that enable the maintainence of higher-stratum systemic viability, channeling the behaviour 
+               of said components in such a way to more effectively enable the system's adaptation and persistence. 
+            <p>
+               Naturally, Deacon attempts to account for the evolution of multicellularity as a hierarhichal transition following the familiar logic of functional 
+               duplication, degradation, and synergistic interaction, dedicating a whole section of his <a href="https://www.sciencedirect.com/science/article/pii/S0303264722001514?via=ihub#bib40">
+               Biosystems article</a> to squaring this phenomenon with his framework. To do this, he draws heavily on the recent work of 
+               theoretical biologist and bioengineer <a href="https://ronininstitute.org/research-scholars/felipe-veloso/">Felipe Veloso</a>, whose research
+               demonstrates the importance of a shift in control from intracellular genetic interactions to extracellular relational constraints and regulation
+               of gene expression in the development of individuated multicellular organisms.
+            <p>
+               Here is Deacon once more, describing some principle features of the hierarchic transition to multicellularity: 
+            <p class="quote">
+               "Analogous to the different hierarchic transitions described in previous sections ... functional redundancy can lead to 
+               higher-order synergies and complexity via lower-level degeneracy. Offloading aspects of gene regulation onto the extracellular environment (which 
+               constitutes the higher-order organism) frees up intracellular mechanisms so that they might be recruited for new complementary functions and thus 
+               more complex and diverse cell phenotypes ... To the extent that this extracellular redundancy enables subsequent degeneration of intracellular 
+               genetically based regulation, previously autonomous cells would become increasingly dependent on their multicellular environment, while at the 
+               same time increasing the probability that different cell lineages will develop complementary functions."
+            </p>
+            This logic also extends to the cell-to-cell interactions that guide morphogenetic patterning, cellular differentiation, and the global geometry of 
+            the multicellular organism. Such activity goes beyond genetic regulation to include physical contact and molecular diffusion, as well as 
+            signalling across considerable intercellular distances in the case of the nervous system and its coupling with extrinsic sensory experience. As expected, 
+            "this suggests that the subordination of cell functions to the requirements of their collective synergy emerged as lower-level functional autonomy 
+            degraded in the context of redundant higher-order influences. In this way the evolution of the complex forms exhibited by multicellular bodies—including 
+            animal brains—also appears to be a consequence of an analogous duplication-degradation process that ultimately shifts phenotypic control to the 
+            higher-order synergy that constitutes the multicellular organism."
+            <p> 
+               In closing this section I wish to emphasize the notion of autonomy degradation that plays a key role in both Deacon and Haff's theories. For Haff, this 
+               relationship is implied by the way in which his set of basic dynamical rules describe certain conditions of human subordination to the 
+               requirements of scale and organization, reinforcing "the idea of humans as parts of, rather than simply creators and users of, modern technology."
+               Our species' relationship to, and interactions with the technosphere suggests that humans are "parts of a dynamic and uncontrollable Earth 
+               system from which they cannot escape and in whose service they labor." For Deacon, this type of relationship is an inevitable consequence of a generic 
+               process of hierarchic transitions in evolution, that is to say, a phenomenon thought to have occured multiple times, at multiple scales, in multiple 
+               biological substrates, throughout the history of life on earth. Whenever a process emerges that features collective synergy among individual units and 
+               the extrinsic displacement of their functionality onto the organizational relations between coupled systems, one should expect to see an accompanying 
+               degradation of the autonomy of lower-level units as they transition to the status of components of a novel emergent whole. 
+            <p>
+               A similar account is also offered by biologist and philosopher <a href="https://liberalstudies.duke.edu/people/faculty/daniel-w-mcshea">Daniel W. McShea</a> 
+               under the designation of <a href= "https://sites.duke.edu/mcshearesearch/files/2014/03/Complexity-drain-McShea.pdf">"complexity drain."</a> McShea's work 
+               in this area focuses on the hypothesis that as hierarchical transitions occur the component organisms will tend to lose functional capabilities and internal
+               parts. In other words, whether transitions take place as a result of collective associations among individual cells (such as those amongst free-living
+               prokaryotic cells in the development of the eukaryotic cell, or eukaryotic cells in the origins of multicellularity) or multicellular entities 
+               (such as insects forming individuated colonies), there is an expectation for component organisms to lose complexity in function and part counts. While McShea's
+               work to date tests this occurance solely at the cellular level, comparing the number of part types in protists and the cells of metazoans and land plants, his 
+               findings are consistent with the complexity drain hypothesis and point to further extensions of the study in the form of more nuanced quantitative analyses and 
+               testing at the level of colonial organisms or eusocial colonies.   
+            <p>
+               In a 2017 paper titled <a href="https://link.springer.com/referenceworkentry/10.1007/978-3-319-33038-9_123-1">Evolution of Complexity</a>, McShea provides 
+               an abbreviate overview of this area of research and some different examples: 
+            <p class="quote">
+               "...there is some data to suggest that there is a connection in fact, more specifically, that as a new higher level emerges, parts are lost at the next level 
+               down, what has been called a complexity drain (McShea 2002; O’Malley et al. 2016). In the emergence of the eukaryotic cell, the eubacteria that evolved into 
+               mitochondria became simpler, losing molecular components. More generally, it is thought that in multispecies bacterial associations, one level up from 
+               solitary bacteria, certain species may tend to lose the molecular machinery associated with certain metabolic functions as other species in the association 
+               take over those functions (also known as the “black queen” effect). Also, in multicellular organisms, the cells have fewer part types on average than 
+               free-living protists (McShea 2002). To see this, consider an extreme case, human blood cells, which have essentially no parts at all, compared to free-living 
+               protists, which have many. Finally, there is some reason to think that the same pattern of loss occurred in the origin of intensely social/colonial organisms: 
+               as the individuals in clonal associations differentiated into multiple types (castes in insects, polymorphs in marine invertebrates), they lose parts, becoming 
+               simpler as they specialized."
+            </p>
+            This loss of part types and functional capability is essentially analogous to a loss of autonomy, as this drain on complexity is associated with a reduction in 
+            the phenotypic/behavioural repetoire of component organisms, limiting their ability to operate as discrete and more functionally independent units. McShea 
+            further reiterates this view a number of times in his 2002 paper <a href="https://sites.duke.edu/mcshearesearch/files/2014/03/Complexity-drain-McShea.pdf">A Complexity 
+            Drain On Cells In The Evolution Of Multicellularity</a>, in relation to not only a weakening of autonomy at the cellular level in multicellular organisms, but 
+            also in "...the emergence of coloniality as a weakening of the individuality of the lower-level units (e.g., zooids, castes)" compared with those of related 
+            free-living species, and the simplification of behavioral repertories of individual insects in highly individuated colonies. 
+            <p> 
+               Deacon also briefly remarks on eusociality, referencing his <a href-"https://www.sciencedirect.com/science/article/pii/S0303264722001514">"social addiction"</a> 
+               hypothesis which seeks to explain pro-social organismal behaviour, such as altruism and cooperation, in terms of the "prior degeneration of autonomous capacities" 
+               (e.g. foraging, defending against predation) "due to prolonged relaxed selection in a context where these are available in excess." For Deacon and his co-author 
+               <a href="https://berkeley.academia.edu/JulieHui">Julie Hui</a>, if prolonged relaxation and degeneration "reaches a point of irreversible loss, maintenance of 
+               co-dependence becomes necessary" and "social cooperation is no longer optional" as "any threat to social cohesion becomes a threat to everyone’s survival." 
+               Echoes of these ideas resonate through Haff's perspective on the technosphere as well, however, in this case, co-dependence is not limited to cooperation
+               among human actors and the emergent social relations that structure their cohesion. Our contemporary planetary technological system is now deeply implicated in 
+               governing our cooperation with "incentives such as abundant food, medicines, instant communication channels and other desiderata that bind, or even addict, 
+               humans to the system that produces them, as well as by less subtle mechanisms expressed via legal, judicial, political, military and other elements of the 
+               technological armory." Cohesion is therefore distributed across a techno-social system with sentient components operating at a global scale, and as this 
+               dynamical system becomes increasingly individuated, threats to its viability (i.e. behaviour that is too autonomous, and therefore unaligned with the 
+               co-dependency required to serve the interests and ensure the stability of the technosphere) become threats to our own survival.
+               <a id="ct"></a>
+            <p>
+               <br>
+            <p class="subtitle">Concluding Thoughts
+            <p>
+               I'd like to end with a few thoughts about future directions for research, as well as some critical reflections on what I've written so far. Having initially 
+               engaged solely with his earlier presentation on hierarchic transitions, I was surprised that Deacon did not turn his attention to the subject of technology 
+               in any great detail. It's not exactly an arcane or marginal perspective to see technology as a universal anthropological phenomenon which exteriorizes 
+               physiological and cognitive phenotypes and is deeply correlated with human social and cultural activity. To be fair, however, in his more recent text, Deacon 
+               does gesture towards an analysis of stone-age technology and its contribution to relaxed selection for masticatory adaptations, foraging behaviour, and sexual
+               selection in prehistorical hominins. To my mind, another potentially interesting example is the co-evolutionary synergies between certain physiological,
+               behavioural, and cognitive adaptations and our use of fire to outsource digestion and provide new sources of warmth, lighting, and protection from predation. 
+               That is to say, following its discovery as a naturally occurring material and energetic process, as members of the genus Homo made practical use of fire, it 
+               may have induced a number of anatomical and cognitive transformations, including the size, shape, and function of the brain, teeth, and digestive tract (e.g. see 
+               <a href="https://onlinelibrary.wiley.com/doi/10.1002/evan.20275">1</a>, <a href="https://www.journals.uchicago.edu/doi/10.1086/204350">2</a>, 
+               <a href="https://www.science.org/doi/10.1126/science.316.5831.1558">3</a>). Moreover, there is <a href="https://www.pnas.org/doi/full/10.1073/pnas.2101108118">
+               some evidence</a> to suggest this technological innovation may have also been strongly associated with the developemnt of novel cultural mechanisms related 
+               to its transmission and persistence as a widespread feature of human life. Perhaps there's a story to be told about the "long evolutionary history 
+               of an obligate dependence on fire", its relationship to the logic of duplication, relaxation, degradation, and synergistic interaction, and even its place in 
+               the broad historical development of <a href="https://sci-hub.ru/10.1038/s41559-017-0138">planetary energy expansions</a> and the arrival of the modern 
+               technosphere. Examples such as this one could also add to a more nuanced image of how complexity drain or degradation manifests at certain scales (such as
+               the organ level) while enabling evolutionary novelty at a higher strata (e.g. at cognitive and techno-socio-cultural levels).  
+            <p>
+               Another possible thread to explore would be evaluating different perspectives on how to explain phenomena like hierarchical transitions and its relationship
+               to individuation and autonomy in complex dynamical systems. As I noted earlier in this text, there is a diverse literature on these and related topics and a 
+               more pluralist account could help us establish more clearly the explanatory limits of any individual thinker or set of ideas, theories, or models. 
+               This <a href="https://global.oup.com/academic/product/perspectival-realism-9780197555620?cc=us&lang=en&">multi-perspectival</a> approach might also enable a  
+               more comprehensive understanding of the subject at hand by incorporating heterogeneous perspectives at multiple levels of analysis. For instance, theories related
+               to the concepts of <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sres.3850050107">organizational closure in social</a> and 
+               <a href="https://link.springer.com/chapter/10.1007/978-94-017-9837-2_1">biological systems</a>, 
+               <a href="https://reflexus.org/wp-content/uploads/Autopoiesis-structural-coupling-and-cognition.pdf">strutural coupling</a>, 
+               <a href="https://www.dialecticalsystems.eu/contributions/why-western-science-and-philosophy-cannot-deal-with-the-relations-between-parts-and-wholes/">organizational 
+               constraint, and identity</a>, particularly in the work of <a href="https://en.wikipedia.org/wiki/Humberto_Maturana">Humberto Maturana</a>, 
+               <a href="https://en.wikipedia.org/wiki/Francisco_Varela">Francisco Varela</a>, <a href="https://scholar.google.com/citations?user=tlUCk58AAAAJ&hl=en">Matteo Mossio</a>, 
+               <a href="https://www.ias-research.net/people/alvaro_moreno/">Alvaro Moreno</a>, <a href="https://en.wikipedia.org/wiki/Niklas_Luhmann">Niklas Luhmann</a>, 
+               and <a href="https://mitpress.mit.edu/author/alicia-juarrero-3467/">Alicia Juarrero</a>, could go a long way in furnishing this text with alternative yet 
+               kindred frameworks for thinking through the ideas presented here. 
+            <p>
+               Take the 2015 book <a href="https://link.springer.com/book/10.1007/978-94-017-9837-2">Biological Autonomy: A Philosophical and Theoretical Enquiry</a> by Moreno
+               and Mossio, where the authors address, among other things, the question of biological organization and identity relative to levels of autonomy in pluricellular 
+               systems. In their account, organisms can establish “strong interactions with each other, giving rise to several different types of stable associations” with 
+               “different degrees of cohesion” which “tend to occupy new niches and to increase the chances of survival of both the constituting units and the associations 
+               themselves as a whole.” They also ask whether the constituting biological units of these integrated pluricellular systems are “still autonomous entities or 
+               just non-autonomous parts of an encompassing autonomous system.” This theoretical framework employs more generalizable concepts (such as 
+               structural-coupling and organizational or regulatory constraint) and more fine-grained classifications (such as varying degrees of cohesive associations and 
+               different types of stable associations along a continuum of <a href="https://pubmed.ncbi.nlm.nih.gov/21162371/">organizational closure</a>) that may afford 
+               more flexible and encompassing applications to the topic at hand, rather than seeking correlations between the functionality and degradation of a genome, 
+               as it often seems to be the case in Deacon's work, and the dynamics of massively complicated systems involving social, behavioural, biological, and technological dimensions. 
+               Granted, the productivity of Moreno and Mossio's formulations would hinge on their adaptation and extension to questions 
+               regarding hybrid networks of artefacts and organisms. A valid criticism in this respect would regard the limitations of treating the coupling of biological 
+               and technological systems, and the coupling of biological systems alone, as equivalent phenomena. Perhaps their resemblance does not justify their conflation and 
+               each may require much more precise and differentiated theorization in order to truly illuminate the dynamics shaping these related yet distinct processes. Then 
+               again, a more pluralist and comprehensive approach could also help to reconcile these approaches fruitfully. 
+            <p> 
+               Continuing on this note, it is worth asking: if the coupling of hybrid techno-bio-social systems is shaped by similar principles to those operating in biological
+               systems, where might we locate the technosphere along a spectrum of systems exhibiting varying degrees of stable associations and cohesion? How similar really are the 
+               organizational dynamics of the technosphere to those of a multicellular organism or a eukaryotic cell? It would seem extremely premature to see a strict identity 
+               between these biological phenomena and this current stage of planetary technological civilization. Though, as per the underlying thrust of this text, it may be 
+               worth thinking of the latter as analogous to the very earliest phases of obligate symbiosis. That is to say, the sentient componenets of the technosphere 
+               may not be coupled with their host system to the same extent as a mitochondrion organelle is with the eukaryotic host cell. Yet, as I have attempted 
+               to sketch in this text, we are nontheless on a trajectory of co-dependence or obligate coupling constituted by organizational constraint, a marked loss of autonomy, 
+               and relatively strong interactions and stable associations with the technosphere. To my mind, it is therefore very plausible that we have already ventured a few 
+               steps through the generic sequence of phases that we would expect to occur in the evolutionary process of a hierarchic transition with the technosphere.  
+            <p>
+               Some questions aimed at better understanding this trajectory could touch on whether certain thresholds exists across different types of systems, 
+               with similar underlying dynamics, that would mark a kind of tipping point into irreversible synergistic and co-dependent coupling. If so, how might we locate, or 
+               approximate, where such thresholds might lie and what their effects are predicted to be? This manner of inquiry might also benefit from integrating perspectives 
+               related to ideas such as <a href="https://en.wikipedia.org/wiki/Path_dependence">path-dependence</a> or <a href="https://www.isecoeco.org/pdf/techlkin.pdf">lock-ins</a>, 
+               and the various methods for conceptualizing, modelling, and studying these kinds of occurances. Although these concepts are not precisely synonymous, they both 
+               more-or-less describe how particular technologies become increasingly and systemically integrated into a social and/or broader environmental context in such a way 
+               that the space of alternatives becomes reduced in a progressively inflexible and possibly irreversible manner. This process is notably historical, whereby small 
+               events, sometimes driven by chance, can be magnified by positive feedback within a socio-technical, economic, and cultural system (including, but not limited to 
+               phenomena such as: increasing returns, network effects, interrelatedness of components, and high switching costs). This feedback can propel the system towards a 
+               state where all options within the range of its possible trajectories are no longer equiprobable. These ideas, and other related concepts within the history of 
+               science and technology literature, as well as that of science and policy studies and the history of technological change, are worth unpacking in detail in relation
+               to Haff's thoughts on the quasi-autonomous regulatory feedback loops of the technosphere and their role in sustaining its integrity as a systemic unit with 
+               stability against disruption.  
+            <p> 
+               Finally, and relatedly, if there are indeed basic principles related to organizational constraint, hierarchic transitions, and degradation of autonomy, as described 
+               by Haff, Deacon, McShea, and others, that are consistent across a multitude of complex systems, including techno-bio-social hybrids, it seems relevant to contemplate 
+               the implications for both political and ethical theories regarding human action in a world of diminished control over emerging planetary systems of historically 
+               unprecedented size and impact. Haff ventures very briefly into this area, touching on topics like the consequences of ecological degradation, global warming, 
+               world population, high-metabolism technology, waste product recycling, and external environmental and thermodynamic challenges to the stability of the technosphere’s 
+               growth conditions. Although Haff does not attempt to offer much in the way of solutions to these problems, he does emphasize the significance of recycling 
+               metabolic waste generated by the technosphere, writing that "unlike earlier Earth paradigms, which recycle most of their waste products, the technosphere does little 
+               recycling. The future of the technosphere as a paradigm rather than just an episode in Earth history is contingent upon the emergence of effective recycling mechanisms." 
+               Haff is insistent, however, that any transition to facilitate recycling will require an increase in energy expenditure and that "the framework for our decisions and 
+               choices [regarding this transformation and the accompanying cultural, political, and policy factors] will be shaped and guided by the needs of the technosphere 
+               as well as by human needs." 
+            <p>
+               It would therefore be timely, if not imperative, to explore these ideas in depth, and with urgency, possibly with greater input from 
+               complexity science, biology, philosophy, and other associated disciplines. For the range of hypothetical interventions into the evolution of large-scale technological 
+               systems, and the ability to freely implement any of them, may not be something our species can take for granted. And if this is true, not just of our current 
+               relationship to the technosphere, but also for a variety of both natural and artificial complex systems that humans are entwined with, then we may be driven to retool 
+               how we think about ethics and governance in relationship with techno-bio-social planning and design, and notions of 
+               autonomy, agency, control, and individuality in this context. That is to say, we may benefit from using knowledge about which natural regularities of complex 
+               hierarchical systems constrain human action to assess which normative frameworks, or which political systems or modes of social organization, might be the most salient 
+               and beneficial for governing human behaviour relative to the many systems which we may find ourselves coupled with now and in the future. 
+            <p>
+               <br>
+            <p style="margin-left: 30px">
+               <a class="top" href="#top">↗ Return to Top</a>
+         </div>
+      </div>
+   </body>
+   <script></script>
 </html>
