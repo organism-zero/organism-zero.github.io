@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+   </head>
+   <style>   
+      ::selection {
+      background: #eedc82;
+      }
+      nav a::selection {
+      background: none;
+      }
+      .txtimg::selection {
+      background: none;
+      }
+      .hdrimg::selection {
+      background: none;
+      }
+      body {
+      font-family: 'Figtree', sans-serif;
+      cursor: url("/cursor/o.svg"), auto;
+      }
+      header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      border: 1.5px solid black;
+      padding: 20px;
+      z-index: 100;
+      }
+      a {
+      cursor: url("/cursor/o2.svg"), auto !important;
+      }
+      nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      }
+      nav li {
+      list-style: none;
+      }
+      .wrt a {
+      color: transparent;
+      text-shadow: 0 0 25px #666666;
+      }
+      nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 29px;
+      padding: 10px;
+      }
+      .text {
+      margin-top: 10px;
+      padding: 30px;
+      border: 1.5px solid black;
+      }
+      .title { 
+      font-size: 29px; 
+      border-bottom: 1.5px solid black;
+      padding-bottom: 3px;
+      margin-bottom: 38px;
+      }
+      .subtitle {
+      font-size: 29px; 
+      padding-bottom: 5px; 
+      border-bottom: 1.5px dotted black;
+      }
+      .p {
+      font-size: 23px;   
+      }
+      .text a {
+      text-decoration: underline;
+      text-decoration-color: #ea0000;
+      color: black;
+      }
+      .text a:hover {
+      text-decoration: none;
+      background-color: #ea0000;
+      }
+      .txtimg {
+      display: block;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .hdrimg {
+      display: block;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .quote {
+      margin-left: 30px; 
+      font-size: 20px;"
+      }
+      @media (max-width: 768px) {
+      html {
+      scroll-padding-top: 200px;
+      }
+      nav ul {
+      flex-direction: column;
+      }
+      nav a {
+      font-size: 25px;
+      }
+      .title {
+      font-size: 25px;  
+      }
+      .subtitle {
+      font-size: 25px;  
+      }
+      .p {
+      font-size: 17px;   
+      }
+      .txtimg {
+      width: 100%;
+      }
+      .quote {
+      margin-left: 30px; 
+      font-size: 15px;
+      }
+      }
+   </style>
+   <body>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="/index.html">organism.zero</a></li>
+               <li><a href="/img.html">images 🌀</a></li>
+               <li class="wrt"><a>writing 💬</a></li>
+               <li><a href="/abt.html">about 👥</a></li>
+               <li><a href="/scl.html">social 🕸</a></li>
+            </ul>
+         </nav>
+      </header>
+      <a id="top"></a>
+      <div class="text">
+      <div class="title">
+         The Thermodynamics of Biology as a Speculative Model for a Living Technosphere
+      </div>
+         <div class="p">
+            <p class="subtitle">Sections
+            <p style="margin-left: 30px">
+               ⧆ <a href="#s">Summary</a>
+               <br>
+               ⧆ <a href="#bcce">Biology in the Context of Cosmological Entropy</a>
+               <br>
+               ⧆ <a href="#idah">Intrinsic Duplication + Ancestral Haemoglobin</a>
+               <br>
+               ⧆ <a href="#dssoa">Dissipative Systems: From Self-Organization to Autopoiesis</a>
+               <br> 
+               ⧆ <a href="#edtbt">Entropy and the Directional Trajectory of the Biosphere and Technosphere</a>
+               <br>
+               ⧆ <a href="#c">Conclusion</a>
+            </p>
+
+               <a id="s"></a>
+            </p>
+               <br>
+            <p class="subtitle">Summary
+            <p>
+
+               <a name="bcce"></a>
+            <p>
+               <br>
+            <p class="subtitle">Biology in the Context of Cosmological Entropy
+            <p>
+
+            <br>
+               <img class="txtimg" src="nestedMechOrig.jpeg">
+ 
+               <a name="dssoa"></a>  
+            <p>
+               <br>
+            <p class="subtitle">Dissipative Systems: From Self-Organization to Autopoiesis
+            <p>
+ 
+               <a name="edtbt"></a>  
+            <p>
+               <br>
+            <p class="subtitle">Entropy and the Directional Trajectory of the Biosphere and Technosphere
+            <p>
+
+               <a name="ntbt"></a>  
+            <p>
+               <br>
+            <p class="subtitle">Nonequilibrium Thermodynamics, Biology, and Technology
+            <p>
+
+               <a id="c"></a>
+            <p>
+               <br>
+            <p class="subtitle">Conclusion
+            <p>
+
+            <p>
+               <br>
+            <p style="margin-left: 30px">
+               <a class="top" href="#top">⧊ Return to Top</a>
+         </div>
+      </div>
+   </body>
+</html>
