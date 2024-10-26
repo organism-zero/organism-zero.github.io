@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Description" content="Bio for Cristian Hernandez-Blick">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400&display=swap" rel="stylesheet">
+  </head>
+  <style>   
+    * {
+    cursor: url("/cursor/o.svg"), auto;
+    }
+    ::selection {
+    background: none;
+    }    
+    body {
+    font-family: 'Figtree', sans-serif;
+    }
+    header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1.5px solid black;
+    padding: 20px;
+    z-index: 100;
+    }
+    a {
+    cursor: url("/cursor/o2.svg"), auto !important;
+    }    
+    nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    }
+    nav li {
+    list-style: none;
+    }
+    .wrt a {
+    color: transparent;
+    text-shadow: 0 0 25px #666666;
+    }
+    nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    padding: 10px;
+    }
+    .summary {
+    margin-top: 10px;
+    padding: 30px;
+    border: 1.5px solid black;
+    font-size: 25px;
+    }
+    .pdf {
+    margin-top: 10px;
+    padding: 30px;
+    border: 1.5px solid black;
+    font-size: 25px;
+    }
+    .link {
+    color: black;
+    text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    nav a {
+    font-size: 25px;
+    }
+    .bio {
+    font-size: 20px;
+    }
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">organism.zero</a></li>
+          <li><a href="img.html">images 🌀</a></li>
+          <li class="wrt"><a>writing 💬</a></li>
+          <li><a href="abt.html">about 👥</a></li>
+          <li><a href="scl.html">social 🕸</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="summary">Prepared for a mail art project facilitated by the artist-run centre 
+      UNIT/PITT. The intention of the project was to gather “recipes” to be published in a 
+      follow-up to 
+      <a href="https://www.unitpitt.ca/product/helens-cookbook/" target="_blank" rel="noopener noreferrer">Helen’s Cookbook (2007)</a>: 
+      A full-colour cornucopia of recipes by artists, food-related texts and images produced as part of an 
+      investigation and celebration of food, eating and the social and artistic possibilities of 
+      the meal. For this iteration, there were no limitations on content or themes. Submissions could be a 
+      traditional recipe, or a variation on the concept of a recipe, or a response to a previous entry from
+      another artist.
+      <br>
+      This entry is a simplified set of instructions for the generation of induced pluripotent stem cells,
+      a type of pluripotent stem cell that can be generated directly from a somatic cell.
+    </div>
+    
+    <div class="pdf"><a class="link" href="/wrt/ipsc.pdf">Recipe for iPSC</a>.</div>
+  </body>
+  <script></script>
+</html>
