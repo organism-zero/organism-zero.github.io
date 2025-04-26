@@ -7,86 +7,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400&display=swap" rel="stylesheet">
+    <style>   
+      * {
+        cursor: url("/cursor/o.svg"), auto;
+      }
+      ::selection {
+        background: none;
+      }    
+      body {
+        font-family: 'Figtree', sans-serif;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        border: 1.5px solid black;
+        padding: 20px;
+        z-index: 100;
+      }
+      a {
+        cursor: url("/cursor/o2.svg"), auto !important;
+      }    
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+      }
+      nav li {
+        list-style: none;
+      }
+      .wrt a {
+        color: transparent;
+        text-shadow: 0 0 25px #666666;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 25px;
+        padding: 10px;
+      }
+      
+      .summary-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .summary {
+        flex: 1;
+        padding: 30px;
+        border: 1.5px solid black;
+        font-size: 25px;
+      }
+      .summary-image { 
+        flex: 1;
+        padding: 0px;
+        border: 1.5px solid black;
+      }
+      
+      .summary-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .pdf {
+        margin-top: 10px;
+        padding: 30px;
+        border: 1.5px solid black;
+        font-size: 25px;
+      }
+      .linka {
+        color: black;
+        text-decoration: underline;
+      }
+      .linkb {
+        color: black;
+        text-decoration: none;
+      }
+      
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        nav a {
+          font-size: 25px;
+        }
+        .summary {
+          font-size: 20px;
+        }
+        .pdf {
+          font-size: 20px;
+        }
+        .summary-container {
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
   </head>
-  <style>   
-    * {
-    cursor: url("/cursor/o.svg"), auto;
-    }
-    ::selection {
-    background: none;
-    }    
-    body {
-    font-family: 'Figtree', sans-serif;
-    }
-    header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    border: 1.5px solid black;
-    padding: 20px;
-    z-index: 100;
-    }
-    a {
-    cursor: url("/cursor/o2.svg"), auto !important;
-    }    
-    nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    }
-    nav li {
-    list-style: none;
-    }
-    .wrt a {
-    color: transparent;
-    text-shadow: 0 0 25px #666666;
-    }
-    nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 25px;
-    padding: 10px;
-    }
-    .summary {
-    margin-top: 10px;
-    padding: 30px;
-    border: 1.5px solid black;
-    font-size: 25px;
-    }
-    .pdf {
-    margin-top: 10px;
-    padding: 30px;
-    border: 1.5px solid black;
-    font-size: 25px;
-    }
-    .linka {
-    color: black;
-    text-decoration: underline;
-    }
-    .linkb {
-    color: black;
-    text-decoration: none;
-    }
-    
-    @media (max-width: 768px) {
-    nav ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    nav a {
-    font-size: 25px;
-    }
-    .summary {
-    font-size: 20px;
-    }
-    .pdf {
-    font-size: 20px;
-    }
-    }
-  </style>
   <body>
     <header>
       <nav>
@@ -100,20 +121,27 @@
       </nav>
     </header>
 
-    <div class="summary">A contribution to a mail art project led by the artist-run organization 
-      <a class="linka" href="https://www.unitpitt.ca" target="_blank" rel="noopener noreferrer">UNIT/PITT</a>. 
-      The intention of the project was to gather “recipes” to be published in a 
-      follow-up to 
-      <a class="linka" href="https://www.unitpitt.ca/product/helens-cookbook/" target="_blank" rel="noopener noreferrer">Helen’s Cookbook (2007)</a>: 
-      a full-colour cornucopia of recipes by artists, food-related texts and images produced as part of an 
-      investigation and celebration of food, eating and the social and artistic possibilities of 
-      the meal. For this iteration, there were no limitations on content or themes. Submissions could be a 
-      traditional recipe, or a variation on the concept of a recipe, or a response to a previous entry from
-      another artist. This entry is a simplified set of instructions for creating induced pluripotent 
-      stem cells, a type of stem cell that can be generated from a somatic cell.
+    <div class="summary-container">
+      <div class="summary">
+        A contribution to a mail art project led by the artist-run organization 
+        <a class="linka" href="https://www.unitpitt.ca" target="_blank" rel="noopener noreferrer">UNIT/PITT</a>. 
+        The intention of the project was to gather “recipes” to be published in a 
+        follow-up to 
+        <a class="linka" href="https://www.unitpitt.ca/product/helens-cookbook/" target="_blank" rel="noopener noreferrer">Helen’s Cookbook (2007)</a>: 
+        a full-colour cornucopia of recipes by artists, food-related texts and images produced as part of an 
+        investigation and celebration of food, eating and the social and artistic possibilities of 
+        the meal. 
+        <p>For this iteration, there were no limitations on content or themes. Submissions could be a 
+        traditional recipe, or a variation on the concept of a recipe, or a response to a previous entry from
+        another artist. This entry is a simplified set of instructions for creating induced pluripotent 
+        stem cells, a type of stem cell that can be generated from a somatic cell.
+      </div>
+      <div class="summary-image">
+        <img src="https://www.temp-image.com/ib/NjJeyo8RhetMAmD_1745707211.jpg" alt="Descriptive alt text" />
+      </div>
     </div>
-    
+
     <div class="pdf">View: <a class="linkb" href="/wrt/ipsc.pdf">⊞ A Recipe for ⊹ Induced Pluripotent Stem Cells ⨁</a></div>
+
   </body>
-  <script></script>
 </html>
